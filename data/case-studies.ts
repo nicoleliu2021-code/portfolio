@@ -6,7 +6,7 @@ export const caseStudies: CaseStudy[] = [
     title: "CRO & Funnel Optimization",
     company: "Rocket Mortgage",
     role: "Digital Product Manager",
-    duration: "2021-2023",
+    duration: "2024-Present",
     category: "Product",
     thumbnail: "/images/rocket-mortgage.jpg",
     problem: "The mortgage application funnel was experiencing significant drop-off at key stages, particularly between initial visit and lead submission. Conversion rates varied widely across different user segments, indicating opportunities for personalization.",
@@ -64,7 +64,7 @@ export const caseStudies: CaseStudy[] = [
     title: "Acquisition Strategy & Growth Experiments",
     company: "Upstart",
     role: "Growth Marketing Manager",
-    duration: "2019-2021",
+    duration: "2021-2023",
     category: "Growth",
     thumbnail: "/images/upstart.jpg",
     problem: "Customer acquisition costs (CAC) were rising across all channels while conversion rates remained flat. The company needed to scale user acquisition profitably while maintaining credit quality standards.",
@@ -114,129 +114,217 @@ export const caseStudies: CaseStudy[] = [
     tags: ["Growth", "Acquisition", "Marketing", "Fintech", "Data-Driven"],
   },
   {
+    id: "analytics-consulting",
+    title: "Analytics Deep Dive: Career Transition Research",
+    company: "Independent Research",
+    role: "Career Transition / Skill Building",
+    duration: "2023",
+    category: "Product",
+    thumbnail: "/images/analytics-consulting.jpg",
+    problem: "After three years in growth marketing at Upstart, I wanted to transition deeper into product analytics and experimentation. Rather than immediately jumping into another role, I took time to deepen my technical analytics skills, study best practices, and create work samples that demonstrated capabilities beyond marketing attribution.",
+    opportunity: "Use this transition period to master SQL, build analytics frameworks from scratch, study experimentation methodology in depth, and create portfolio pieces showing product analytics thinking—not just marketing analytics.",
+    hypothesis: "By spending focused time building analytics systems, documenting methodologies, and creating reusable frameworks, I could transition from growth marketing into more technical product management roles with strong data foundations.",
+    strategy: `**Technical Skill Development:**
+- Master advanced SQL for product analytics (cohorts, funnels, retention)
+- Learn data visualization tools (Looker, Tableau) beyond basic dashboards
+- Study statistical methods for experimentation (Bayesian, sequential testing)
+- Understand data warehouse architecture and ETL concepts
+
+**Framework Creation:**
+- Build reusable experimentation framework and decision trees
+- Create product metrics templates for different business models
+- Document analytics best practices and common pitfalls
+- Design sample dashboards for various use cases
+
+**Hands-On Projects:**
+- Volunteer analytics work with 2 early-stage startups (unpaid)
+- Analyze public datasets to practice SQL and visualization
+- Build sample analytics infrastructure as portfolio pieces
+- Write documentation as if setting up analytics for a new company`,
+    execution: `**Project 1: B2B SaaS Analytics Framework (Volunteer)**
+- Volunteered with seed-stage SaaS startup to build analytics foundations
+- Designed event tracking schema for their onboarding flow (15 key events)
+- Wrote SQL queries analyzing activation patterns (cohort analysis, drop-off points)
+- Created Looker dashboard mockups for signup → activation → retention
+- Documented A/B testing methodology for their first experiments
+- **Learning:** Hands-on experience with product activation metrics and SQL implementation
+
+**Project 2: Mobile App Analytics Study (Volunteer)**
+- Helped early-stage consumer app map their user journey
+- Set up basic event tracking taxonomy in Amplitude (learning the tool)
+- Built sample dashboards for MAU, retention curves, and engagement metrics
+- Wrote experimentation guidelines document based on their use cases
+- Practiced explaining statistical concepts to non-technical team
+- **Learning:** Mobile app metrics are different from web; engagement patterns vary by use case
+
+**Self-Directed Learning:**
+- Completed 20+ SQL exercises on Mode Analytics and DataCamp
+- Built sample dashboards in Tableau using public datasets
+- Read research papers on experimentation (Kohavi, Netflix tech blog)
+- Created reusable templates: sample size calculator, experiment brief, metric definition doc
+- Studied bayesian methods and sequential testing approaches`,
+    metrics: [
+      { label: "Volunteer Projects", value: "2", change: "unpaid experience" },
+      { label: "SQL Queries Written", value: "50+", change: "practice & real work" },
+      { label: "Frameworks Created", value: "5", change: "reusable templates" },
+      { label: "Tools Learned", value: "4", change: "Looker, Tableau, Mode, Amplitude" },
+    ],
+    learnings: [
+      "Volunteer work provides real learning—even unpaid projects teach you more than courses because constraints are real",
+      "SQL proficiency takes practice—moved from basic queries to complex cohort analysis over 6 months of daily practice",
+      "Analytics frameworks are transferable—the same funnel analysis approach works across B2B, B2C, marketplace models",
+      "Documentation is a skill—writing clear metric definitions and experiment guidelines is harder than it looks",
+      "Statistical knowledge is essential—can't be a credible analytics PM without understanding sample sizes, p-values, and power",
+      "Career transitions require proof—volunteer work and frameworks became talking points in interviews for Rocket Mortgage role",
+    ],
+    tags: ["Analytics", "Career Transition", "SQL", "Experimentation", "Self-Directed Learning"],
+  },
+  {
     id: "web-app-1",
     title: "AI-Powered Resume Builder",
     company: "Personal Project",
     role: "Product Builder",
-    duration: "2024",
+    duration: "2025",
     category: "Builder",
     thumbnail: "/images/resume-builder.jpg",
-    problem: "Job seekers struggle to tailor their resumes for different positions, often submitting generic resumes that don't highlight relevant experience. This results in lower application success rates and wasted time.",
-    opportunity: "With advances in AI and LLMs, we can automatically analyze job descriptions and suggest relevant experience, skills, and accomplishments to highlight. This could save job seekers hours of work while improving application quality.",
-    hypothesis: "An AI-powered resume builder that analyzes job descriptions and automatically tailors resume content will help users create better, more targeted resumes in 1/10th the time.",
-    strategy: `**Product Approach:**
-- Build MVP with core functionality: JD analysis, content matching, resume generation
-- Focus on simplicity - no complex resume builders, just smart tailoring
-- Make it free to attract early users and gather feedback
+    link: "https://resume-tailor-ai-nine.vercel.app",
+    problem: "As a PM, I wanted to deeply understand AI integration, LLM prompting, and building consumer products. Rather than just reading about it, I decided to build a real product that solves a problem I personally experienced: tailoring resumes for different roles.",
+    opportunity: "This project was an opportunity to master the full product development lifecycle—from idea to shipped product—while learning AI/ML integration, modern web development, and user-centric design.",
+    hypothesis: "By building an AI-powered tool from scratch, I can demonstrate technical depth, product thinking, and the ability to ship quickly—skills that make me a better PM and collaborator with engineering teams.",
+    strategy: `**Learning Goals:**
+- Master GPT-4 API integration and prompt engineering
+- Build production-ready Next.js application
+- Learn PDF generation and client-side data handling
+- Practice rapid prototyping and user feedback loops
 
-**Technical Architecture:**
-- Next.js for fast, modern web app
-- OpenAI API for job description analysis
-- Local storage for user data (privacy-first)
-- PDF generation for downloadable resumes
+**Technical Stack Chosen:**
+- Next.js 14 (App Router) for modern React patterns
+- OpenAI GPT-4 API for intelligent content analysis
+- TypeScript for type safety and better DX
+- Tailwind CSS for rapid UI development
+- jsPDF for client-side PDF generation
+- localStorage for privacy-first data persistence
 
-**User Flow:**
-1. User pastes job description
-2. AI extracts key requirements and themes
-3. User inputs their experience
-4. AI matches experience to job requirements
-5. Generate tailored resume with one click`,
-    execution: `**Week 1-2: Research & Design**
-- Interviewed 15 job seekers about resume pain points
-- Analyzed 50+ job descriptions to identify patterns
-- Designed simple, focused UI
+**Product Principles:**
+- Ship fast: MVP in 2 weeks
+- Solve one problem exceptionally well
+- Free to use, no monetization complexity
+- Privacy-first: all data stays in browser`,
+    execution: `**Week 1: Learning & Setup**
+- Deep dive into OpenAI API documentation
+- Prototyped 10+ prompt variations for JD analysis
+- Set up Next.js project with TypeScript
+- Designed component architecture and data flow
 
-**Week 3-4: MVP Development**
-- Built JD parsing logic with GPT-4
-- Created resume template system
-- Implemented PDF export
+**Week 2: Core Feature Development**
+- Built job description parser with GPT-4
+- Implemented theme extraction algorithm
+- Created resume template system with customization
+- Added real-time preview functionality
 
-**Week 5-6: Testing & Iteration**
-- Beta tested with 20 users
-- Gathered feedback and iterated
-- Added skill matching feature based on user requests
+**Week 3: Polish & Testing**
+- Built PDF export with professional formatting
+- Added copy-to-clipboard for each section
+- Implemented browser storage for user data
+- Beta tested with 10 friends in job search
 
-**Week 7-8: Launch & Distribution**
-- Launched on Product Hunt
-- Posted in job seeker communities
-- Gathered user feedback for v2`,
+**Week 4: Launch & Iteration**
+- Deployed to Vercel (learned CI/CD)
+- Soft launched on LinkedIn for feedback
+- Iterated on prompts based on edge cases
+- Added skill matching based on user requests`,
     metrics: [
-      { label: "Users (Month 1)", value: "2,400", change: "" },
-      { label: "Resumes Generated", value: "8,600", change: "" },
-      { label: "Time Saved (avg)", value: "42 min", change: "per resume" },
-      { label: "User Rating", value: "4.8/5", change: "" },
+      { label: "Development Time", value: "4 weeks", change: "idea to launch" },
+      { label: "Technologies Learned", value: "6+", change: "new skills" },
+      { label: "Code Commits", value: "127", change: "" },
+      { label: "API Integrations", value: "3", change: "OpenAI, Vercel, Analytics" },
     ],
     learnings: [
-      "Solve one problem really well - users wanted a simple tool that did one thing perfectly, not a complex platform",
-      "AI works best as a copilot - users wanted suggestions they could edit, not fully automated output",
-      "Distribution is harder than building - getting users was 10x harder than building the product",
-      "Feedback is gold - early users provided insights that shaped the product direction",
-      "Launch fast, iterate faster - waiting for perfection would have delayed learning by months",
+      "AI prompt engineering is an art—took 20+ iterations to get GPT-4 outputs consistent and useful",
+      "Shipping early reveals assumptions—initial design was over-engineered; users wanted simple and fast",
+      "Technical understanding improves PM skills—can now have deeper conversations with engineers about APIs, state management, and performance",
+      "Building forces product decisions—every feature requires tradeoffs that become visceral when you're the one implementing",
+      "Modern web development moves fast—Next.js 14 App Router, Server Components, and Vercel deployment were all new concepts I mastered",
+      "User feedback is humbling—my initial UI was confusing; real users showed me what 'intuitive' actually means",
     ],
-    tags: ["Builder", "AI", "Product Development", "MVP", "User Research"],
+    tags: ["Builder", "AI/LLM", "Next.js", "TypeScript", "Full-Stack", "Product Development"],
   },
   {
     id: "web-app-2",
     title: "Tutor Marketplace Platform",
     company: "Personal Project",
     role: "Product Builder",
-    duration: "2023",
+    duration: "December 2025",
     category: "Builder",
     thumbnail: "/images/tutor-marketplace.jpg",
-    problem: "Parents struggle to find qualified tutors for their kids, while tutors lack a centralized platform to find students. Existing marketplaces are cluttered, expensive (30% fees), and don't facilitate quality matching.",
-    opportunity: "Build a modern, low-fee marketplace that prioritizes quality matching, transparent pricing, and great user experience for both sides of the market.",
-    hypothesis: "A marketplace that charges lower fees (10% vs. 30%), has simple matching, and focuses on quality will attract both tutors and students, creating a sustainable two-sided marketplace.",
-    strategy: `**Marketplace Strategy:**
-- Start with one city (Ann Arbor) to achieve density
-- Focus on high school subjects (highest demand)
-- Recruit high-quality tutors first (supply-side focus)
+    problem: "I wanted to understand marketplace dynamics firsthand—the cold start problem, two-sided liquidity, trust mechanisms, and payment flows. Reading case studies isn't the same as building, so I chose to create a real marketplace and experience the challenges myself.",
+    opportunity: "Build a functional two-sided marketplace to learn: authentication systems, real-time messaging, payment integration (Stripe), review systems, and the product decisions required to balance supply and demand.",
+    hypothesis: "By building a marketplace end-to-end, I'll gain hands-on experience with complex product challenges that will make me a better PM for platform products. The goal is learning, not revenue.",
+    strategy: `**Learning Objectives:**
+- Master two-sided marketplace dynamics (supply/demand balance)
+- Implement secure authentication and user roles
+- Integrate payment processing (Stripe API)
+- Build real-time messaging system
+- Create review and rating mechanisms
+- Learn database design for relational data
 
-**Matching Approach:**
-- Simple profile system (subject, rate, availability, reviews)
-- Search and filter functionality
-- Direct messaging for coordination
+**Technical Challenges to Solve:**
+- User authentication with different roles (tutor vs. parent)
+- Search and filtering with multiple parameters
+- Real-time chat with message persistence
+- Payment flow with platform fee calculation
+- Review system with verification
+- Profile management with image uploads
 
-**Monetization:**
-- 10% platform fee (vs. 30% competitors)
-- Free for tutors to list
-- Free for parents to search
+**Tech Stack:**
+- Next.js with API routes for backend
+- PostgreSQL for relational data
+- Stripe for payment processing
+- Pusher for real-time messaging
+- Cloudinary for image hosting
+- NextAuth for authentication`,
+    execution: `**Month 1: Foundation & Core Features**
+- Designed database schema (users, profiles, bookings, messages, reviews)
+- Built authentication system with role-based access
+- Created profile pages for tutors and parents
+- Implemented search with filters (subject, rate, availability)
+- Set up basic UI with responsive design
 
-**Growth Tactics:**
-- Partner with local schools for tutor recruitment
-- Parent referral program
-- Local Facebook groups and community boards`,
-    execution: `**Month 1: MVP Development**
-- Built profile system for tutors and students
-- Created search and messaging functionality
-- Implemented basic payment processing
+**Month 2: Marketplace Mechanics**
+- Integrated Stripe Connect for payments
+- Built booking flow with calendar availability
+- Created in-app messaging system using Pusher
+- Implemented notification system (email + in-app)
+- Added profile verification process
 
-**Month 2: Tutor Recruitment**
-- Recruited 50 tutors through university partnerships
-- Verified credentials and conducted interviews
-- Created tutor onboarding process
+**Month 3: Trust & Quality**
+- Built review and rating system
+- Added tutor credential verification
+- Created onboarding flows for both sides
+- Implemented dispute resolution workflow
+- Added profile completion prompts
 
-**Month 3: Parent Acquisition**
-- Launched in local Facebook groups
-- Partnered with 3 schools for promotion
-- Ran small Google Ads test campaign
-
-**Month 4-6: Iteration & Scale**
-- Added review system based on feedback
-- Improved matching algorithm with filters
-- Expanded to nearby cities`,
+**Month 4: Polish & Real-World Testing**
+- Soft launched with 10 tutors and 5 families
+- Fixed edge cases discovered in production
+- Improved search algorithm based on usage
+- Added analytics tracking for key flows
+- Iterated on UI based on user feedback`,
     metrics: [
-      { label: "Active Tutors", value: "180", change: "" },
-      { label: "Monthly Sessions", value: "450", change: "" },
-      { label: "GMV (Month 6)", value: "$18K", change: "" },
-      { label: "Avg Tutor Rating", value: "4.9/5", change: "" },
+      { label: "Features Built", value: "25+", change: "end-to-end" },
+      { label: "API Endpoints", value: "18", change: "RESTful" },
+      { label: "Database Tables", value: "12", change: "normalized design" },
+      { label: "Integrations", value: "5", change: "Stripe, Auth, Storage, etc." },
     ],
     learnings: [
-      "Marketplace is hard - need to balance supply and demand, which requires different strategies for each side",
-      "Start hyperlocal - trying to serve multiple cities diluted efforts; focus on one market first",
-      "Trust is everything - reviews, verification, and responsive support were critical to building trust",
-      "Pricing power matters - lower fees attracted tutors but made unit economics challenging",
-      "Retention > Acquisition - focusing on repeat bookings was more valuable than new customer acquisition",
+      "Marketplace dynamics are harder than expected—chicken-and-egg problem is real; spent more time on supply recruitment than building",
+      "Payment processing is complex—Stripe integration taught me about webhooks, idempotency, and handling edge cases like refunds and disputes",
+      "Database design matters—poor initial schema required costly migration; learned importance of thinking through relationships upfront",
+      "Trust mechanisms are critical—without reviews and verification, both sides hesitated; trust features should be built early, not later",
+      "Real-time features are expensive—messaging system worked but required ongoing infrastructure costs; learned to evaluate feature ROI vs. complexity",
+      "Two-sided products require different strategies per side—tutors needed credibility signals, parents needed selection and quality guarantees",
+      "Building != scaling—getting 10 users taught me product; getting to 100 would require entirely different skills (marketing, ops)",
     ],
-    tags: ["Builder", "Marketplace", "Two-Sided Platform", "Product Development", "Growth"],
+    tags: ["Builder", "Marketplace", "Full-Stack", "Stripe", "Real-Time", "Database Design"],
   },
 ];

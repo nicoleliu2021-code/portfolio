@@ -35,17 +35,17 @@ export const buildLog: BuildLogEntry[] = [
     id: "build-001",
     title: "AI Resume Builder",
     description: "Built an AI-powered tool that analyzes job descriptions and tailors resume content. Uses GPT-4 for analysis, Next.js for the frontend, and generates PDFs on demand.",
-    date: "2024-01",
+    date: "2025-01",
     status: "Completed",
     tags: ["AI", "Next.js", "Product"],
-    link: "https://resume-builder.example.com",
+    link: "https://resume-tailor-ai-nine.vercel.app",
     github: "https://github.com/yourusername/resume-builder",
   },
   {
     id: "build-002",
     title: "Tutor Marketplace",
     description: "Two-sided marketplace connecting tutors with students. Features include search, filtering, messaging, reviews, and payment processing. Built with Next.js and Stripe.",
-    date: "2023-06",
+    date: "2025-12",
     status: "Completed",
     tags: ["Marketplace", "Next.js", "Stripe"],
     link: "https://tutor-marketplace.example.com",
@@ -54,7 +54,7 @@ export const buildLog: BuildLogEntry[] = [
     id: "build-003",
     title: "Product Metrics Dashboard",
     description: "Building a real-time analytics dashboard that tracks key product metrics across funnel stages. Experimenting with data visualization and automated anomaly detection.",
-    date: "2024-03",
+    date: "2026-03",
     status: "In Progress",
     tags: ["Analytics", "Dashboard", "Data Viz"],
   },
@@ -62,7 +62,7 @@ export const buildLog: BuildLogEntry[] = [
     id: "build-004",
     title: "AI Product Teardown Generator",
     description: "Experimenting with using AI to generate initial product teardown drafts. Feed it a product URL and it analyzes the experience, identifies friction points, and suggests experiments.",
-    date: "2024-02",
+    date: "2025-11",
     status: "Experiment",
     tags: ["AI", "Product Analysis", "Automation"],
   },
@@ -72,7 +72,7 @@ export const workExperience: WorkExperience[] = [
   {
     company: "Rocket Mortgage",
     role: "Digital Product Manager",
-    duration: "2021 - 2023",
+    duration: "2024 - Present",
     description: "Led digital product strategy and execution for mortgage application funnel, focusing on CRO, personalization, and experimentation.",
     achievements: [
       "Increased visit-to-lead conversion by 18% through intent-based personalization and funnel optimization",
@@ -83,9 +83,22 @@ export const workExperience: WorkExperience[] = [
     ],
   },
   {
+    company: "Career Transition",
+    role: "Independent Learning & Skill Development",
+    duration: "2023",
+    description: "Took focused time to deepen technical analytics skills and transition from growth marketing into product management. Completed volunteer analytics projects, built frameworks, and mastered SQL and data visualization tools.",
+    achievements: [
+      "Volunteered analytics work with 2 early-stage startups (unpaid) to gain hands-on product analytics experience",
+      "Mastered advanced SQL through 50+ practice queries and real-world cohort/funnel analysis",
+      "Built reusable analytics frameworks: experiment methodology, metric definitions, dashboard templates",
+      "Learned Looker, Tableau, Mode Analytics, and Amplitude through self-study and volunteer projects",
+      "Created portfolio of analytics work samples that demonstrated readiness for technical PM roles",
+    ],
+  },
+  {
     company: "Upstart",
     role: "Growth Marketing Manager",
-    duration: "2019 - 2021",
+    duration: "2021 - 2023",
     description: "Owned acquisition strategy and execution across paid channels, focusing on reducing CAC while scaling volume and maintaining credit quality.",
     achievements: [
       "Reduced CAC by 28% while increasing qualified applications by 42% YoY",
@@ -98,7 +111,7 @@ export const workExperience: WorkExperience[] = [
   {
     company: "Infineon Technologies",
     role: "Product Marketing Manager",
-    duration: "2017 - 2019",
+    duration: "2018 - 2021",
     description: "Led product positioning and go-to-market strategy for semiconductor solutions targeting hyperscalers and enterprise customers.",
     achievements: [
       "Launched 3 product lines with combined $15M in year-1 revenue",
@@ -111,8 +124,8 @@ export const workExperience: WorkExperience[] = [
   {
     company: "DENSO",
     role: "MBA Strategy Consultant",
-    duration: "2016 - 2017",
-    description: "Conducted strategic analysis of mobility market and robotaxi opportunity for automotive supplier.",
+    duration: "2020",
+    description: "Conducted strategic analysis of mobility market and robotaxi opportunity for automotive supplier during MBA program.",
     achievements: [
       "Analyzed $50B+ robotaxi market opportunity and developed market entry strategy",
       "Recommended product portfolio shifts that influenced $200M+ in R&D allocation",

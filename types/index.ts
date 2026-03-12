@@ -14,6 +14,8 @@ export interface CaseStudy {
   metrics: Metric[];
   learnings: string[];
   tags: string[];
+  link?: string;
+  github?: string;
 }
 
 export interface Metric {
