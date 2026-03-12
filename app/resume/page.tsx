@@ -102,13 +102,13 @@ export default function ResumePage() {
             <div className="mb-4">
               <h3 className="text-xl font-bold text-gray-900">MBA</h3>
               <p className="text-gray-600">University Name</p>
-              <p className="text-sm text-gray-500">2015 - 2017</p>
+              <p className="text-sm text-gray-500">2019 - 2021</p>
             </div>
 
             <div>
               <h3 className="text-xl font-bold text-gray-900">BS Engineering</h3>
               <p className="text-gray-600">University Name</p>
-              <p className="text-sm text-gray-500">2010 - 2014</p>
+              <p className="text-sm text-gray-500">2005 - 2009</p>
             </div>
           </div>
         </section>

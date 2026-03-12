@@ -77,7 +77,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="mt-8 pt-8 border-t border-gray-200">
           <p className="text-sm text-gray-500 text-center">
-            © {new Date().getFullYear()} Your Name. Built with Next.js, Tailwind, and ❤️
+            © {new Date().getFullYear()} Xuejing Liu. Built with Next.js, Tailwind, and ❤️
           </p>
         </div>
       </div>
