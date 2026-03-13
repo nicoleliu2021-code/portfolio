@@ -13,7 +13,10 @@ const iconMap = {
 };
 
 export default function FeaturedWork() {
-  const featuredProjects = caseStudies.slice(0, 4);
+  // Filter out analytics foundation projects from featured section
+  const featuredProjects = caseStudies
+    .filter(cs => !['b2b-saas-analytics', 'mobile-app-analytics'].includes(cs.id))
+    .slice(0, 4);
 
   return (
     <section className="py-20 bg-white">

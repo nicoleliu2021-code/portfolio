@@ -8,19 +8,19 @@ const principles = [
     icon: Brain,
     title: "AI isn't a feature, it's a platform shift",
     description:
-      "Every product category will be rebuilt with AI-first UX. I'm not building chatbots—I'm rethinking workflows from first principles with LLMs as primitive infrastructure.",
-  },
-  {
-    icon: Target,
-    title: "Ship to learn, don't learn to ship",
-    description:
-      "Perfect specs are fiction. I launch MVPs in weeks, instrument everything, run A/B tests with proper power analysis, and let user behavior—not opinions—drive iteration.",
+      "Every product category will be rebuilt with AI-first UX. I'm not building chatbots—I'm rethinking workflows from first principles with LLMs as primitive infrastructure. I've shipped 3 AI products to prove it.",
   },
   {
     icon: Zap,
-    title: "PMs who code have unfair advantages",
+    title: "The best PMs build, not just spec",
     description:
-      "I prototype in Next.js, debug API responses, and understand ML limitations. This isn't about writing production code—it's about having high-resolution conversations with engineers.",
+      "In 2026, I stopped writing specs and started shipping products. I've launched 3 web apps because building makes you a 10x better PM—you understand constraints, feasibility, and tradeoffs in ways spec writers never will.",
+  },
+  {
+    icon: Target,
+    title: "Experimentation over opinions",
+    description:
+      "I've run 30+ properly powered A/B tests generating $4.2M in revenue. Perfect specs are fiction—I ship MVPs, instrument everything, and let data decide what to build next.",
   },
   {
     icon: Repeat,

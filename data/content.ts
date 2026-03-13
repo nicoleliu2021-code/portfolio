@@ -70,9 +70,23 @@ export const buildLog: BuildLogEntry[] = [
 
 export const workExperience: WorkExperience[] = [
   {
+    company: "Independent Product Development",
+    role: "Builder / Founder",
+    duration: "2026 - Present",
+    description: "Expanded from PM and growth work into hands-on product building. Launched multiple AI-powered applications using modern development workflows, practiced rapid MVP shipping, and strengthened technical product capabilities through end-to-end execution.",
+    achievements: [
+      "Built and shipped 3 production web applications: AI resume optimizer, tutor marketplace MVP, and PM portfolio platform",
+      "Implemented AI-assisted development workflows using Claude Code, Vercel, and GitHub for rapid prototyping and deployment",
+      "Designed end-to-end product experiences including UX flows, feature prioritization, and go-to-market positioning",
+      "Shipped MVPs in 2-4 week cycles, practicing product discovery through iteration and user feedback",
+      "Developed AI resume customization system that parses job descriptions and tailors content using GPT-4 API",
+      "Built marketplace prototype with real-time messaging, payment integration (Stripe), and two-sided user flows",
+    ],
+  },
+  {
     company: "Rocket Mortgage",
     role: "Digital Product Manager",
-    duration: "2024 - Present",
+    duration: "2024 - 2025",
     description: "Led digital product strategy and execution for mortgage application funnel, focusing on CRO, personalization, and experimentation.",
     achievements: [
       "Increased visit-to-lead conversion by 18% through intent-based personalization and funnel optimization",
@@ -83,16 +97,16 @@ export const workExperience: WorkExperience[] = [
     ],
   },
   {
-    company: "Career Transition",
-    role: "Independent Learning & Skill Development",
+    company: "Technical Skill Development",
+    role: "Analytics & Product Foundations",
     duration: "2023",
-    description: "Took focused time to deepen technical analytics skills and transition from growth marketing into product management. Completed volunteer analytics projects, built frameworks, and mastered SQL and data visualization tools.",
+    description: "Intentionally leveled up technical and analytics capabilities to transition from growth marketing into product management. Completed hands-on analytics projects with startups, mastered SQL and visualization tools, and built reusable frameworks—creating a foundation for data-driven product work.",
     achievements: [
-      "Volunteered analytics work with 2 early-stage startups (unpaid) to gain hands-on product analytics experience",
-      "Mastered advanced SQL through 50+ practice queries and real-world cohort/funnel analysis",
-      "Built reusable analytics frameworks: experiment methodology, metric definitions, dashboard templates",
-      "Learned Looker, Tableau, Mode Analytics, and Amplitude through self-study and volunteer projects",
-      "Created portfolio of analytics work samples that demonstrated readiness for technical PM roles",
+      "Completed volunteer analytics projects with 2 early-stage startups to gain hands-on experience with product metrics, funnels, and cohort analysis",
+      "Achieved SQL proficiency through 50+ practice queries and real-world implementations of retention curves, activation tracking, and user segmentation",
+      "Created reusable analytics frameworks including experiment methodology templates, metric definition standards, and dashboard design patterns",
+      "Self-taught Looker, Tableau, Mode Analytics, and Amplitude through structured learning and applied projects",
+      "Built portfolio of work samples demonstrating capability in funnel optimization, A/B test design, and statistical analysis",
     ],
   },
   {

@@ -2,13 +2,13 @@
 
 import Link from "next/link";
 import Button from "@/components/ui/Button";
-import { ArrowRight, Sparkles, TrendingUp, Code } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -23,7 +23,7 @@ export default function Hero() {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-100 text-gray-900 text-sm font-medium mb-8"
           >
             <Sparkles className="h-4 w-4 text-blue-600" />
-            AI-First Product Manager
+            Product Manager • Builder • Data-Driven
           </motion.div>
 
           {/* Headline */}
@@ -33,11 +33,7 @@ export default function Hero() {
             transition={{ delay: 0.2 }}
             className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-[1.1]"
           >
-            I ship AI products,
-            <br />
-            run rigorous experiments,
-            <br />
-            <span className="text-gray-500">and build from scratch</span>
+            AI-first PM who builds products, not just specs
           </motion.h1>
 
           {/* Value Prop */}
@@ -45,38 +41,16 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="text-xl sm:text-2xl text-gray-600 mb-8 max-w-3xl leading-relaxed"
+            className="text-xl sm:text-2xl text-gray-600 mb-12 max-w-3xl leading-relaxed"
           >
-            Most PMs write docs. I write code. Most PMs theorize. I run experiments with proper sample sizes.
-            Most PMs talk about AI. I've shipped AI products to production.
+            I drive product strategy, run experiments, and ship code. Former PM at <span className="text-gray-900 font-semibold">Rocket Mortgage</span> and <span className="text-gray-900 font-semibold">Upstart</span>. In 2026, I became a builder—launching 3 AI-powered web apps and mastering the full product development cycle.
           </motion.p>
-
-          {/* Quick Stats */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
-            className="flex flex-wrap gap-6 mb-10 text-sm"
-          >
-            <div className="flex items-center gap-2">
-              <div className="h-8 w-8 rounded-lg bg-gray-100 flex items-center justify-center">
-                <TrendingUp className="h-4 w-4 text-gray-700" />
-              </div>
-              <span className="text-gray-900 font-medium">$4.2M revenue generated through experimentation</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="h-8 w-8 rounded-lg bg-gray-100 flex items-center justify-center">
-                <Code className="h-4 w-4 text-gray-700" />
-              </div>
-              <span className="text-gray-900 font-medium">2 AI products built and shipped</span>
-            </div>
-          </motion.div>
 
           {/* CTAs */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5 }}
+            transition={{ delay: 0.4 }}
             className="flex flex-wrap gap-4"
           >
             <Link href="/work">
@@ -87,7 +61,7 @@ export default function Hero() {
             </Link>
             <Link href="/about">
               <Button variant="secondary" size="lg">
-                How I Think
+                My Builder Journey
               </Button>
             </Link>
           </motion.div>

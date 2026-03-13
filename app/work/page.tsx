@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { caseStudies } from "@/data/case-studies";
-import { TrendingUp, Rocket, Lightbulb, Code, ArrowRight } from "lucide-react";
+import { TrendingUp, Rocket, Lightbulb, Code, ArrowRight, BarChart3 } from "lucide-react";
 
 const iconMap = {
   Product: TrendingUp,
@@ -15,6 +15,99 @@ export const metadata = {
 };
 
 export default function WorkPage() {
+  // Separate case studies into sections
+  const featuredWork = caseStudies.filter(cs =>
+    !['b2b-saas-analytics', 'mobile-app-analytics'].includes(cs.id)
+  );
+  const analyticsWork = caseStudies.filter(cs =>
+    ['b2b-saas-analytics', 'mobile-app-analytics'].includes(cs.id)
+  );
+
+  const renderCaseStudyCard = (project: typeof caseStudies[0]) => {
+    const Icon = iconMap[project.category];
+    return (
+      <Link key={project.id} href={`/work/${project.id}`}>
+        <div className="group bg-white border border-gray-200 rounded-2xl p-8 hover:border-gray-300 hover:shadow-xl transition-all duration-300">
+          <div className="flex flex-col md:flex-row gap-8">
+            {/* Left: Info */}
+            <div className="flex-1">
+              {/* Category Badge */}
+              <div className="flex items-center gap-2 mb-4">
+                <div className="p-2 rounded-lg bg-gray-100 group-hover:bg-gray-900 transition-colors">
+                  <Icon className="h-5 w-5 text-gray-700 group-hover:text-white transition-colors" />
+                </div>
+                <span className="text-sm font-medium text-gray-600">
+                  {project.category}
+                </span>
+                <span className="text-gray-400">•</span>
+                <span className="text-sm text-gray-500">{project.duration}</span>
+              </div>
+
+              {/* Title */}
+              <h3 className="text-3xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+                {project.title}
+              </h3>
+
+              {/* Company & Role */}
+              <p className="text-lg text-gray-600 mb-4">
+                {project.company} • {project.role}
+              </p>
+
+              {/* Problem */}
+              <p className="text-gray-700 mb-6 line-clamp-3">
+                {project.problem}
+              </p>
+
+              {/* Tags */}
+              <div className="flex flex-wrap gap-2 mb-6">
+                {project.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="px-3 py-1 rounded-full bg-gray-100 text-gray-700 text-xs font-medium"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+
+              {/* Arrow */}
+              <div className="flex items-center text-gray-900 font-medium group-hover:text-blue-600 transition-colors">
+                Read full case study
+                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </div>
+            </div>
+
+            {/* Right: Metrics */}
+            <div className="md:w-80 flex-shrink-0">
+              <div className="bg-gray-50 rounded-xl p-6">
+                <h4 className="text-sm font-semibold text-gray-900 mb-4 uppercase tracking-wide">
+                  Key Results
+                </h4>
+                <div className="space-y-4">
+                  {project.metrics.slice(0, 3).map((metric, idx) => (
+                    <div key={idx}>
+                      <div className="text-2xl font-bold text-gray-900">
+                        {metric.value}
+                      </div>
+                      <div className="text-sm text-gray-600 mt-1">
+                        {metric.label}
+                      </div>
+                      {metric.change && (
+                        <div className="text-sm text-green-600 font-medium mt-1">
+                          {metric.change}
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Link>
+    );
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
@@ -32,93 +125,38 @@ export default function WorkPage() {
         </div>
       </div>
 
-      {/* Case Studies Grid */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 gap-8">
-          {caseStudies.map((project) => {
-            const Icon = iconMap[project.category];
-            return (
-              <Link key={project.id} href={`/work/${project.id}`}>
-                <div className="group bg-white border border-gray-200 rounded-2xl p-8 hover:border-gray-300 hover:shadow-xl transition-all duration-300">
-                  <div className="flex flex-col md:flex-row gap-8">
-                    {/* Left: Info */}
-                    <div className="flex-1">
-                      {/* Category Badge */}
-                      <div className="flex items-center gap-2 mb-4">
-                        <div className="p-2 rounded-lg bg-gray-100 group-hover:bg-gray-900 transition-colors">
-                          <Icon className="h-5 w-5 text-gray-700 group-hover:text-white transition-colors" />
-                        </div>
-                        <span className="text-sm font-medium text-gray-600">
-                          {project.category}
-                        </span>
-                        <span className="text-gray-400">•</span>
-                        <span className="text-sm text-gray-500">{project.duration}</span>
-                      </div>
+        {/* Featured Work Section */}
+        <div className="mb-20">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Featured Work</h2>
+          <div className="grid grid-cols-1 gap-8">
+            {featuredWork.map(renderCaseStudyCard)}
+          </div>
+        </div>
 
-                      {/* Title */}
-                      <h2 className="text-3xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
-                        {project.title}
-                      </h2>
-
-                      {/* Company & Role */}
-                      <p className="text-lg text-gray-600 mb-4">
-                        {project.company} • {project.role}
-                      </p>
-
-                      {/* Problem */}
-                      <p className="text-gray-700 mb-6 line-clamp-3">
-                        {project.problem}
-                      </p>
-
-                      {/* Tags */}
-                      <div className="flex flex-wrap gap-2 mb-6">
-                        {project.tags.map((tag) => (
-                          <span
-                            key={tag}
-                            className="px-3 py-1 rounded-full bg-gray-100 text-gray-700 text-xs font-medium"
-                          >
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
-
-                      {/* Arrow */}
-                      <div className="flex items-center text-gray-900 font-medium group-hover:text-blue-600 transition-colors">
-                        Read full case study
-                        <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                      </div>
-                    </div>
-
-                    {/* Right: Metrics */}
-                    <div className="md:w-80 flex-shrink-0">
-                      <div className="bg-gray-50 rounded-xl p-6">
-                        <h3 className="text-sm font-semibold text-gray-900 mb-4 uppercase tracking-wide">
-                          Key Results
-                        </h3>
-                        <div className="space-y-4">
-                          {project.metrics.slice(0, 3).map((metric, idx) => (
-                            <div key={idx}>
-                              <div className="text-2xl font-bold text-gray-900">
-                                {metric.value}
-                              </div>
-                              <div className="text-sm text-gray-600 mt-1">
-                                {metric.label}
-                              </div>
-                              {metric.change && (
-                                <div className="text-sm text-green-600 font-medium mt-1">
-                                  {metric.change}
-                                </div>
-                              )}
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            );
-          })}
+        {/* Analytics Foundations Section */}
+        <div>
+          <div className="flex items-center gap-3 mb-4">
+            <div className="h-12 w-12 rounded-xl bg-gray-900 flex items-center justify-center">
+              <BarChart3 className="h-6 w-6 text-white" />
+            </div>
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900">Analytics Foundations</h2>
+              <p className="text-gray-600 mt-1">
+                Hands-on projects building analytics infrastructure and mastering product metrics
+              </p>
+            </div>
+          </div>
+          <div className="bg-gradient-to-r from-blue-50 to-gray-50 border border-gray-200 rounded-2xl p-6 mb-8">
+            <p className="text-gray-700 leading-relaxed">
+              In 2023, I intentionally deepened my analytics capabilities through volunteer work with early-stage startups.
+              These unpaid projects gave me hands-on experience designing event schemas, writing SQL analyses, building dashboards,
+              and creating experimentation frameworks—skills that became foundational to my transition into technical product management.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 gap-8">
+            {analyticsWork.map(renderCaseStudyCard)}
+          </div>
         </div>
       </div>
     </div>

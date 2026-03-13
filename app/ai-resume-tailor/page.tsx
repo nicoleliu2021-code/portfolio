@@ -1,8 +1,9 @@
 import ResumeTailor from "@/components/ai-resume-tailor/ResumeTailor";
 
 export const metadata = {
-  title: "AI Resume Tailor | Product Manager Portfolio",
-  description: "Paste a job description and see how my experience aligns. Get tailored resume bullets, key skills, and recommended case studies.",
+  title: "AI Resume Tailor | Tailor Your Resume in Seconds",
+  description: "Paste a job description and get ATS-optimized resume bullets, keyword matches, and tailored content instantly. Free AI-powered resume optimization tool.",
+  keywords: ["resume tailor", "ATS optimization", "job application", "resume keywords", "AI resume", "resume optimizer"],
 };
 
 export default function AIResumeTailorPage() {

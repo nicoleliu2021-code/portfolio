@@ -114,70 +114,154 @@ export const caseStudies: CaseStudy[] = [
     tags: ["Growth", "Acquisition", "Marketing", "Fintech", "Data-Driven"],
   },
   {
-    id: "analytics-consulting",
-    title: "Analytics Deep Dive: Career Transition Research",
-    company: "Independent Research",
-    role: "Career Transition / Skill Building",
-    duration: "2023",
+    id: "b2b-saas-analytics",
+    title: "Product Analytics Foundation: B2B SaaS Activation",
+    company: "Early-Stage SaaS Startup",
+    role: "Volunteer Analytics Contributor",
+    duration: "2023 (3 months)",
     category: "Product",
     thumbnail: "/images/analytics-consulting.jpg",
-    problem: "After three years in growth marketing at Upstart, I wanted to transition deeper into product analytics and experimentation. Rather than immediately jumping into another role, I took time to deepen my technical analytics skills, study best practices, and create work samples that demonstrated capabilities beyond marketing attribution.",
-    opportunity: "Use this transition period to master SQL, build analytics frameworks from scratch, study experimentation methodology in depth, and create portfolio pieces showing product analytics thinking—not just marketing analytics.",
-    hypothesis: "By spending focused time building analytics systems, documenting methodologies, and creating reusable frameworks, I could transition from growth marketing into more technical product management roles with strong data foundations.",
-    strategy: `**Technical Skill Development:**
-- Master advanced SQL for product analytics (cohorts, funnels, retention)
-- Learn data visualization tools (Looker, Tableau) beyond basic dashboards
-- Study statistical methods for experimentation (Bayesian, sequential testing)
-- Understand data warehouse architecture and ETL concepts
+    problem: "Seed-stage B2B SaaS company had product-market fit but no analytics infrastructure. Team was making product decisions based on intuition, not data—couldn't answer basic questions like 'Which onboarding steps cause drop-off?' or 'What predicts activation?'",
+    opportunity: "Build analytics foundation from scratch: design event tracking, implement funnel analysis, create dashboards, and establish experimentation framework—providing hands-on experience with product analytics while helping an early-stage team.",
+    hypothesis: "By designing proper instrumentation and building cohort analyses, we could identify activation patterns and drop-off points, enabling data-driven product decisions and establishing foundation for future experimentation.",
+    strategy: `**Event Tracking Design:**
+- Map complete user journey from signup through activation
+- Design event taxonomy with clear naming conventions
+- Document tracking implementation for engineering
+- Define key product events and user properties
 
-**Framework Creation:**
-- Build reusable experimentation framework and decision trees
-- Create product metrics templates for different business models
-- Document analytics best practices and common pitfalls
-- Design sample dashboards for various use cases
+**SQL Analysis Framework:**
+- Build cohort analysis queries for activation patterns
+- Create retention curve analysis (Day 1, 7, 30)
+- Identify funnel drop-off points with SQL
+- Analyze time-to-value across user segments
 
-**Hands-On Projects:**
-- Volunteer analytics work with 2 early-stage startups (unpaid)
-- Analyze public datasets to practice SQL and visualization
-- Build sample analytics infrastructure as portfolio pieces
-- Write documentation as if setting up analytics for a new company`,
-    execution: `**Project 1: B2B SaaS Analytics Framework (Volunteer)**
-- Volunteered with seed-stage SaaS startup to build analytics foundations
-- Designed event tracking schema for their onboarding flow (15 key events)
-- Wrote SQL queries analyzing activation patterns (cohort analysis, drop-off points)
-- Created Looker dashboard mockups for signup → activation → retention
-- Documented A/B testing methodology for their first experiments
-- **Learning:** Hands-on experience with product activation metrics and SQL implementation
+**Dashboard & Metrics:**
+- Create Looker dashboard mockups for key funnels
+- Define activation metrics and success criteria
+- Build sample cohort comparison views
+- Document metric definitions for team alignment
 
-**Project 2: Mobile App Analytics Study (Volunteer)**
-- Helped early-stage consumer app map their user journey
-- Set up basic event tracking taxonomy in Amplitude (learning the tool)
-- Built sample dashboards for MAU, retention curves, and engagement metrics
-- Wrote experimentation guidelines document based on their use cases
-- Practiced explaining statistical concepts to non-technical team
-- **Learning:** Mobile app metrics are different from web; engagement patterns vary by use case
+**Experimentation Methodology:**
+- Write A/B testing playbook for onboarding experiments
+- Document sample size calculation approach
+- Create experiment brief templates
+- Train team on statistical concepts`,
+    execution: `**Phase 1: Discovery & Journey Mapping (Weeks 1-2)**
+- Interviewed team to understand current product and user flow
+- Mapped signup → activation journey with product and engineering
+- Identified 15 key events to track across onboarding
+- Created event tracking specification document
 
-**Self-Directed Learning:**
-- Completed 20+ SQL exercises on Mode Analytics and DataCamp
-- Built sample dashboards in Tableau using public datasets
-- Read research papers on experimentation (Kohavi, Netflix tech blog)
-- Created reusable templates: sample size calculator, experiment brief, metric definition doc
-- Studied bayesian methods and sequential testing approaches`,
+**Phase 2: SQL Implementation (Weeks 3-6)**
+- Wrote SQL queries for activation funnel analysis
+- Built cohort retention queries (weekly cohorts, Day 1/7/30 retention)
+- Analyzed drop-off points: identified 40% loss between steps 2-3
+- Discovered users activating <24hrs had 3x better retention
+- Created time-to-value analysis by user segment
+
+**Phase 3: Dashboard Design (Weeks 7-9)**
+- Designed Looker dashboard mockups for 3 core views
+- Built activation funnel dashboard with conversion rates
+- Created retention curve visualization by cohort
+- Developed engagement dashboard showing feature adoption
+- Documented all metric definitions and calculations
+
+**Phase 4: Experimentation Framework (Weeks 10-12)**
+- Wrote experimentation playbook with hypothesis templates
+- Created sample size calculator for their traffic levels
+- Documented statistical significance approach
+- Trained non-technical team members on A/B testing basics
+- Set up experiment brief template for future tests`,
     metrics: [
-      { label: "Volunteer Projects", value: "2", change: "unpaid experience" },
-      { label: "SQL Queries Written", value: "50+", change: "practice & real work" },
-      { label: "Frameworks Created", value: "5", change: "reusable templates" },
-      { label: "Tools Learned", value: "4", change: "Looker, Tableau, Mode, Amplitude" },
+      { label: "Event Schema", value: "15 events", change: "documented" },
+      { label: "SQL Queries", value: "20+", change: "cohort & funnel analysis" },
+      { label: "Dashboard Mockups", value: "3", change: "core product views" },
+      { label: "Key Finding", value: "40% drop", change: "at step 2→3" },
     ],
     learnings: [
-      "Volunteer work provides real learning—even unpaid projects teach you more than courses because constraints are real",
-      "SQL proficiency takes practice—moved from basic queries to complex cohort analysis over 6 months of daily practice",
-      "Analytics frameworks are transferable—the same funnel analysis approach works across B2B, B2C, marketplace models",
-      "Documentation is a skill—writing clear metric definitions and experiment guidelines is harder than it looks",
-      "Statistical knowledge is essential—can't be a credible analytics PM without understanding sample sizes, p-values, and power",
-      "Career transitions require proof—volunteer work and frameworks became talking points in interviews for Rocket Mortgage role",
+      "Product analytics requires instrumentation planning upfront—you can't analyze what you don't track; thoughtful event design is 80% of the work",
+      "SQL proficiency unlocks insights—moving from basic queries to cohort analysis took practice, but autonomy to explore data was worth it",
+      "Activation metrics vary by product—what 'activation' means for B2B SaaS differs from consumer apps; spent time understanding their value delivery moment",
+      "Documentation is a PM skill—writing clear metric definitions and experiment guidelines was harder than expected but critical for team alignment",
+      "Volunteer work teaches real constraints—even unpaid projects have real stakeholders, timelines, and tradeoffs; more valuable than courses",
     ],
-    tags: ["Analytics", "Career Transition", "SQL", "Experimentation", "Self-Directed Learning"],
+    tags: ["Product Analytics", "SQL", "Event Tracking", "Looker", "Activation Funnel", "Cohort Analysis", "Experimentation Framework", "B2B SaaS"],
+  },
+  {
+    id: "mobile-app-analytics",
+    title: "Mobile App Engagement & Retention Study",
+    company: "Seed-Stage Consumer App",
+    role: "Volunteer Analytics Contributor",
+    duration: "2023 (2 months)",
+    category: "Product",
+    thumbnail: "/images/analytics-consulting.jpg",
+    problem: "Early-stage consumer mobile app (iOS/Android) had basic app store metrics but no visibility into in-app behavior, engagement patterns, or retention cohorts. Team couldn't answer: Which features drive retention? When do users churn? What behaviors predict value?",
+    opportunity: "Establish analytics foundations for mobile product—set up event taxonomy in Amplitude, build retention dashboards, create experimentation guidelines, and gain hands-on experience with mobile analytics tools and metrics.",
+    hypothesis: "By implementing proper event tracking and building retention analyses, we could identify engagement patterns and churn moments, enabling the team to focus product development on retention-driving features.",
+    strategy: `**User Journey Mapping:**
+- Map mobile user journey from install to habitual usage
+- Identify key engagement moments and feature adoption milestones
+- Document critical user paths and friction points
+- Create visual journey maps for different personas
+
+**Event Tracking Implementation:**
+- Set up event taxonomy in Amplitude
+- Define events covering app lifecycle and feature usage
+- Configure user properties and event properties
+- Test event firing and validate data quality
+
+**Engagement Analytics:**
+- Build dashboards for MAU/DAU and session frequency
+- Create retention curves for Day 1/7/30 cohorts
+- Analyze feature adoption and engagement patterns
+- Design engagement scoring model
+
+**Experimentation Guidelines:**
+- Write mobile experimentation playbook
+- Document testing approaches for onboarding and features
+- Create decision framework for A/B testing vs. shipping fast
+- Explain statistical concepts in accessible language`,
+    execution: `**Phase 1: Journey Mapping & Planning (Weeks 1-2)**
+- Conducted user interviews with early adopters
+- Mapped install → onboarding → activation → habitual use journey
+- Identified 20+ events to track across user lifecycle
+- Created visual journey maps with team
+
+**Phase 2: Amplitude Setup (Weeks 3-4)**
+- Set up Amplitude event taxonomy (learning tool hands-on)
+- Defined events: install, onboarding steps, feature usage, sharing
+- Configured user properties (acquisition source, persona, preferences)
+- Tested event implementation and validated data accuracy
+- Documented event catalog with descriptions
+
+**Phase 3: Dashboard Creation (Weeks 5-6)**
+- Built MAU/DAU trend dashboard
+- Created retention curve visualization (cohort-based)
+- Analyzed feature adoption: which features correlate with retention?
+- Designed engagement scoring based on session frequency + key actions
+- Built dashboard comparing cohorts by acquisition source
+
+**Phase 4: Experimentation Framework (Weeks 7-8)**
+- Wrote mobile-first experimentation guidelines
+- Documented how to test onboarding flows and feature variations
+- Created framework: when to A/B test vs. iterate quickly
+- Explained statistical concepts (sample size, significance) to founders
+- Set up experiment tracking template`,
+    metrics: [
+      { label: "Event Taxonomy", value: "20+ events", change: "app lifecycle" },
+      { label: "Retention Dashboards", value: "4", change: "cohort views" },
+      { label: "Key Insight", value: "Day 1 retention", change: "predicts Day 30" },
+      { label: "Engagement Model", value: "Built", change: "scoring framework" },
+    ],
+    learnings: [
+      "Mobile metrics differ from web—session-based metrics matter more; load time is critical; push notifications are a retention lever",
+      "Retention curves tell the story—immediate value from cohort visualization; Day 1 retention predicted Day 30 better than any other metric",
+      "Tool proficiency requires hands-on use—reading Amplitude docs ≠ using Amplitude; setting up events taught data validation and troubleshooting",
+      "Engagement patterns vary widely—consumer app behavior differs from B2B; daily active usage isn't always the goal; weekly habits can be sufficient",
+      "Communication is core PM skill—explaining p-values and sample sizes to founders without stats backgrounds taught me to simplify without dumbing down",
+    ],
+    tags: ["Product Analytics", "Amplitude", "Mobile Analytics", "Retention Analysis", "Engagement Metrics", "User Journey Mapping", "Event Tracking", "Consumer Apps"],
   },
   {
     id: "web-app-1",
