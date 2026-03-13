@@ -3,18 +3,13 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Sparkles } from "lucide-react";
 import { useState } from "react";
 
 const navigation = [
-  { name: "Home", href: "/" },
   { name: "Work", href: "/work" },
-  { name: "Projects", href: "/projects" },
-  { name: "Experiments", href: "/experiments" },
-  { name: "Teardowns", href: "/teardowns" },
-  { name: "Thinking", href: "/thinking" },
-  { name: "Build Log", href: "/build-log" },
-  { name: "About", href: "/about" },
+  { name: "Lab", href: "/projects" },
+  { name: "Approach", href: "/about" },
   { name: "Resume", href: "/resume" },
 ];
 
@@ -23,23 +18,26 @@ export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-200">
+    <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo/Name */}
-          <Link href="/" className="flex items-center">
-            <span className="text-xl font-bold text-gray-900">Xuejing Liu</span>
+          <Link href="/" className="flex items-center gap-2 group">
+            <div className="h-8 w-8 rounded-lg bg-gray-900 flex items-center justify-center group-hover:bg-gray-800 transition-colors">
+              <Sparkles className="h-4 w-4 text-white" />
+            </div>
+            <span className="text-lg font-bold text-gray-900">Xuejing Liu</span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-1">
+          <div className="hidden md:flex items-center space-x-2">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
                 className={cn(
-                  "px-3 py-2 rounded-md text-sm font-medium transition-colors",
-                  pathname === item.href
+                  "px-4 py-2 rounded-lg text-sm font-medium transition-colors",
+                  pathname === item.href || pathname.startsWith(item.href + "/")
                     ? "text-gray-900 bg-gray-100"
                     : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
                 )}
@@ -73,7 +71,7 @@ export default function Navigation() {
                 href={item.href}
                 className={cn(
                   "block px-3 py-2 rounded-md text-base font-medium transition-colors",
-                  pathname === item.href
+                  pathname === item.href || pathname.startsWith(item.href + "/")
                     ? "text-gray-900 bg-gray-100"
                     : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
                 )}

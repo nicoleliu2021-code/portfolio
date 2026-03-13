@@ -2,27 +2,28 @@
 
 import Link from "next/link";
 import Button from "@/components/ui/Button";
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight, Sparkles, TrendingUp, Code } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-32">
+    <section className="relative overflow-hidden bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-center max-w-4xl mx-auto"
+          className="max-w-5xl"
         >
           {/* Badge */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.1 }}
-            className="inline-flex items-center px-4 py-2 rounded-full bg-gray-100 text-gray-700 text-sm font-medium mb-6"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-100 text-gray-900 text-sm font-medium mb-8"
           >
-            <span className="mr-2">🚀</span> Product Manager × Builder × Strategist
+            <Sparkles className="h-4 w-4 text-blue-600" />
+            AI-First Product Manager
           </motion.div>
 
           {/* Headline */}
@@ -30,32 +31,53 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight"
+            className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-[1.1]"
           >
-            Product Manager
+            I ship AI products,
             <br />
-            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Who Builds and Ships
-            </span>
+            run rigorous experiments,
+            <br />
+            <span className="text-gray-500">and build from scratch</span>
           </motion.h1>
 
-          {/* Subheadline */}
+          {/* Value Prop */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="text-xl sm:text-2xl text-gray-600 mb-10 max-w-3xl mx-auto"
+            className="text-xl sm:text-2xl text-gray-600 mb-8 max-w-3xl leading-relaxed"
           >
-            I design and launch data-driven digital products across fintech, growth, and AI.
-            I run experiments, optimize funnels, and build real products.
+            Most PMs write docs. I write code. Most PMs theorize. I run experiments with proper sample sizes.
+            Most PMs talk about AI. I've shipped AI products to production.
           </motion.p>
+
+          {/* Quick Stats */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+            className="flex flex-wrap gap-6 mb-10 text-sm"
+          >
+            <div className="flex items-center gap-2">
+              <div className="h-8 w-8 rounded-lg bg-gray-100 flex items-center justify-center">
+                <TrendingUp className="h-4 w-4 text-gray-700" />
+              </div>
+              <span className="text-gray-900 font-medium">$4.2M revenue generated through experimentation</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="h-8 w-8 rounded-lg bg-gray-100 flex items-center justify-center">
+                <Code className="h-4 w-4 text-gray-700" />
+              </div>
+              <span className="text-gray-900 font-medium">2 AI products built and shipped</span>
+            </div>
+          </motion.div>
 
           {/* CTAs */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4"
+            transition={{ delay: 0.5 }}
+            className="flex flex-wrap gap-4"
           >
             <Link href="/work">
               <Button variant="primary" size="lg">
@@ -63,51 +85,18 @@ export default function Hero() {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-            <Link href="/projects">
+            <Link href="/about">
               <Button variant="secondary" size="lg">
-                View Projects
+                How I Think
               </Button>
             </Link>
-            <Link href="/resume">
-              <Button variant="outline" size="lg">
-                <Download className="mr-2 h-5 w-5" />
-                Resume
-              </Button>
-            </Link>
-          </motion.div>
-
-          {/* Stats */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5 }}
-            className="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-8"
-          >
-            <div>
-              <div className="text-3xl font-bold text-gray-900">4+</div>
-              <div className="text-sm text-gray-600 mt-1">Years Experience</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-gray-900">$4.2M+</div>
-              <div className="text-sm text-gray-600 mt-1">Revenue Impact</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-gray-900">30+</div>
-              <div className="text-sm text-gray-600 mt-1">Experiments Run</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-gray-900">2</div>
-              <div className="text-sm text-gray-600 mt-1">Products Built</div>
-            </div>
           </motion.div>
         </motion.div>
       </div>
 
-      {/* Background decoration */}
-      <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute left-1/2 top-0 -translate-x-1/2 blur-3xl opacity-30">
-          <div className="aspect-square w-96 rounded-full bg-gradient-to-r from-blue-400 to-purple-400" />
-        </div>
+      {/* Minimal background decoration */}
+      <div className="absolute inset-0 -z-10 overflow-hidden opacity-40">
+        <div className="absolute right-0 top-0 h-96 w-96 rounded-full bg-gradient-to-br from-blue-100 to-purple-100 blur-3xl" />
       </div>
     </section>
   );

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, TrendingUp, Rocket, Lightbulb, Code } from "lucide-react";
+import { ArrowRight, TrendingUp, Rocket, Lightbulb, Code, ExternalLink } from "lucide-react";
 import { caseStudies } from "@/data/case-studies";
 
 const iconMap = {
@@ -19,12 +19,12 @@ export default function FeaturedWork() {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Featured Work
+        <div className="max-w-3xl mb-16">
+          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+            Selected work
           </h2>
           <p className="text-xl text-gray-600">
-            Real product work across fintech, growth, and builder projects
+            Product launches, growth experiments, and side projects. Each with measurable business impact.
           </p>
         </div>
 
@@ -93,6 +93,14 @@ export default function FeaturedWork() {
                         </span>
                       ))}
                     </div>
+
+                    {/* Link indicator */}
+                    {project.link && (
+                      <div className="flex items-center gap-2 text-sm text-gray-500 mb-4">
+                        <ExternalLink className="h-3 w-3" />
+                        <span>Live project</span>
+                      </div>
+                    )}
 
                     {/* Arrow */}
                     <div className="flex items-center text-gray-900 font-medium group-hover:text-blue-600 transition-colors">

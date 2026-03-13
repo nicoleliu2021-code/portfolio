@@ -1,189 +1,186 @@
-import { User, Briefcase, GraduationCap, Code2 } from "lucide-react";
+import { Target, Zap, Code2, TrendingUp, Sparkles, Brain } from "lucide-react";
 import { workExperience } from "@/data/content";
+import Link from "next/link";
 
 export const metadata = {
-  title: "About | Product Manager Portfolio",
-  description: "Learn about my background, experience, and product philosophy.",
+  title: "How I Work | Product Manager Portfolio",
+  description: "My approach to building AI-first products, running experiments, and shipping fast.",
 };
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-white">
       {/* Header */}
-      <div className="bg-white border-b border-gray-200">
+      <div className="border-b border-gray-200">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="flex items-center gap-3 mb-4">
-            <div className="p-3 rounded-xl bg-gray-900">
-              <User className="h-8 w-8 text-white" />
+          <div className="max-w-3xl">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-100 text-gray-900 text-sm font-medium mb-6">
+              <Sparkles className="h-4 w-4 text-blue-600" />
+              My Approach
             </div>
-            <h1 className="text-5xl font-bold text-gray-900">About</h1>
+            <h1 className="text-5xl font-bold text-gray-900 mb-6">
+              I believe PMs should build, experiment, and ship—not just specify
+            </h1>
+            <p className="text-xl text-gray-600 leading-relaxed">
+              The best product managers don't hide behind Jira tickets. They prototype MVPs in weekends,
+              run A/B tests with proper statistics, and understand their stack well enough to debug alongside engineers.
+            </p>
           </div>
-          <p className="text-xl text-gray-600">
-            Product Manager who builds and ships products across fintech, growth, and AI.
-          </p>
         </div>
       </div>
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        {/* Bio */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">My Story</h2>
-          <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
-            <p>
-              I'm a Product Manager who combines strategic thinking with hands-on building.
-              I believe the best PMs don't just define requirements—they deeply understand
-              the technology, run experiments, and ship products that drive measurable impact.
-            </p>
-            <p>
-              My career has spanned fintech (Rocket Mortgage, Upstart), semiconductor GTM
-              (Infineon), and mobility strategy (DENSO). Across these roles, I've focused
-              on growth, experimentation, and data-driven product development.
-            </p>
-            <p>
-              What sets me apart is my builder mindset. I've shipped two web applications
-              from scratch, run 30+ experiments with rigorous statistical analysis, and
-              generated $4.2M+ in revenue impact through product strategy and execution.
-            </p>
-            <p>
-              I believe in learning by doing, shipping fast, and iterating based on data.
-              This portfolio itself is an example—it's not just a resume, it's a product
-              experience designed to showcase my work and thinking.
-            </p>
+        {/* Core Principles */}
+        <section className="mb-20">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12">How I work</h2>
+          <div className="space-y-12">
+            <div className="flex gap-6">
+              <div className="flex-shrink-0">
+                <div className="h-12 w-12 rounded-xl bg-gray-900 flex items-center justify-center">
+                  <Brain className="h-6 w-6 text-white" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">AI-first product thinking</h3>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  I don't bolt AI onto existing workflows. I rethink the problem from first principles:
+                  What's possible when users can describe intent in natural language? When systems
+                  can reason over unstructured data? When interfaces adapt to individual users?
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  I've shipped AI products that do more than complete text—they parse complex inputs,
+                  make decisions under uncertainty, and learn from user feedback loops.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-6">
+              <div className="flex-shrink-0">
+                <div className="h-12 w-12 rounded-xl bg-gray-900 flex items-center justify-center">
+                  <Target className="h-6 w-6 text-white" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Experimentation over opinions</h3>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  I've run 30+ A/B tests across Rocket Mortgage and Upstart. Not "let's try this" tests—
+                  properly powered experiments with pre-registered hypotheses, minimum detectable effects,
+                  and statistical significance calculations.
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  $4.2M in revenue came from this discipline: testing personalization strategies,
+                  funnel optimizations, and messaging variants. Data decided, not HiPPOs.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-6">
+              <div className="flex-shrink-0">
+                <div className="h-12 w-12 rounded-xl bg-gray-900 flex items-center justify-center">
+                  <Code2 className="h-6 w-6 text-white" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Technical depth as leverage</h3>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  I write Next.js, debug API responses, and understand ML model limitations. Not because
+                  I want to be an engineer—because it makes me a 10x better PM.
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  I can prototype an MVP in a weekend, have high-resolution technical discussions,
+                  and spot feasibility issues before they become 3-sprint rabbit holes.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-6">
+              <div className="flex-shrink-0">
+                <div className="h-12 w-12 rounded-xl bg-gray-900 flex items-center justify-center">
+                  <Zap className="h-6 w-6 text-white" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Ship to learn, iterate to win</h3>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  I don't spend 6 months perfecting specs. I ship MVPs in weeks, instrument everything,
+                  watch how users actually behave, and iterate based on cohort retention curves—not roadmap theater.
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  My AI Resume Builder went from idea to live product in 4 weeks. The Tutor Marketplace
+                  launched with 10 features, not 100—and real users taught me which 5 actually mattered.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
-        {/* Experience Timeline */}
-        <section className="mb-16">
-          <div className="flex items-center gap-3 mb-8">
-            <div className="p-3 rounded-xl bg-blue-100">
-              <Briefcase className="h-6 w-6 text-blue-600" />
-            </div>
-            <h2 className="text-3xl font-bold text-gray-900">Experience</h2>
+        {/* What I look for */}
+        <section className="mb-20">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">What I look for in roles</h2>
+          <div className="bg-gray-50 border border-gray-200 rounded-2xl p-8">
+            <ul className="space-y-4">
+              <li className="flex items-start gap-3">
+                <TrendingUp className="h-5 w-5 text-gray-900 mt-1 flex-shrink-0" />
+                <span className="text-gray-700">
+                  <strong>AI-first products:</strong> Not AI wrappers—products rethinking categories with LLMs as infrastructure
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <TrendingUp className="h-5 w-5 text-gray-900 mt-1 flex-shrink-0" />
+                <span className="text-gray-700">
+                  <strong>Experimentation culture:</strong> Teams that ship, measure, and iterate—not build-and-pray
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <TrendingUp className="h-5 w-5 text-gray-900 mt-1 flex-shrink-0" />
+                <span className="text-gray-700">
+                  <strong>Builder-friendly:</strong> Where PMs can prototype, engineers respect product thinking, and cross-functional collaboration is real
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <TrendingUp className="h-5 w-5 text-gray-900 mt-1 flex-shrink-0" />
+                <span className="text-gray-700">
+                  <strong>Measurable impact:</strong> Where product decisions tie directly to revenue, retention, or market share
+                </span>
+              </li>
+            </ul>
           </div>
+        </section>
 
-          <div className="space-y-8">
-            {workExperience.map((job, idx) => (
-              <div key={idx} className="bg-white border border-gray-200 rounded-2xl p-8">
-                <div className="flex items-start justify-between mb-4">
+        {/* Experience (condensed) */}
+        <section className="mb-20">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Career highlights</h2>
+          <div className="space-y-6">
+            {workExperience.slice(0, 3).map((job, idx) => (
+              <div key={idx} className="border-l-2 border-gray-200 pl-6 pb-6">
+                <div className="flex items-start justify-between mb-2">
                   <div>
-                    <h3 className="text-2xl font-bold text-gray-900">{job.role}</h3>
-                    <p className="text-lg text-gray-600">{job.company}</p>
+                    <h3 className="text-xl font-bold text-gray-900">{job.role}</h3>
+                    <p className="text-gray-600">{job.company}</p>
                   </div>
-                  <span className="text-sm text-gray-500 whitespace-nowrap">
+                  <span className="text-sm text-gray-500 whitespace-nowrap ml-4">
                     {job.duration}
                   </span>
                 </div>
-
-                <p className="text-gray-700 mb-4">{job.description}</p>
-
-                <div className="space-y-2">
-                  {job.achievements.map((achievement, aidx) => (
-                    <div key={aidx} className="flex items-start gap-3">
-                      <span className="text-gray-400 mt-1.5">•</span>
-                      <p className="text-gray-700">{achievement}</p>
-                    </div>
-                  ))}
-                </div>
+                <p className="text-gray-700 text-sm">{job.description}</p>
               </div>
             ))}
           </div>
+          <Link href="/resume" className="inline-flex items-center text-gray-900 font-medium hover:text-blue-600 transition-colors mt-4">
+            View full resume →
+          </Link>
         </section>
 
-        {/* Industries */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Industries</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {["Fintech", "Growth", "B2B SaaS", "Semiconductors", "Mobility", "AI/ML", "Marketplace", "Consumer"].map((industry) => (
-              <div
-                key={industry}
-                className="bg-white border border-gray-200 rounded-lg p-4 text-center"
-              >
-                <span className="font-medium text-gray-900">{industry}</span>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Product Philosophy */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Product Philosophy</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Ship Fast, Learn Faster</h3>
-              <p className="text-gray-700">
-                Perfect is the enemy of done. Ship MVPs, gather data, iterate based on what
-                users actually do—not what they say they'll do.
-              </p>
-            </div>
-
-            <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Let Data Decide</h3>
-              <p className="text-gray-700">
-                Opinions are cheap. Run experiments with proper statistical rigor. Trust the
-                data, even when it contradicts your intuition.
-              </p>
-            </div>
-
-            <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Build to Understand</h3>
-              <p className="text-gray-700">
-                The best PMs stay technical. Build side projects, write code, understand
-                constraints. It makes you a better PM and collaborator.
-              </p>
-            </div>
-
-            <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Solve Real Problems</h3>
-              <p className="text-gray-700">
-                Fall in love with the problem, not your solution. Talk to users, understand
-                their pain, then build the simplest thing that works.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Skills */}
-        <section>
-          <div className="flex items-center gap-3 mb-8">
-            <div className="p-3 rounded-xl bg-purple-100">
-              <Code2 className="h-6 w-6 text-purple-600" />
-            </div>
-            <h2 className="text-3xl font-bold text-gray-900">Skills</h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white border border-gray-200 rounded-xl p-6">
-              <h3 className="font-bold text-gray-900 mb-4">Product</h3>
-              <div className="flex flex-wrap gap-2">
-                {["Product Strategy", "Roadmapping", "User Research", "A/B Testing", "Analytics", "PRDs"].map((skill) => (
-                  <span key={skill} className="px-3 py-1 rounded-full bg-gray-100 text-gray-700 text-sm">
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            <div className="bg-white border border-gray-200 rounded-xl p-6">
-              <h3 className="font-bold text-gray-900 mb-4">Growth</h3>
-              <div className="flex flex-wrap gap-2">
-                {["Acquisition", "Conversion", "Retention", "Funnel Optimization", "Experimentation", "Performance Marketing"].map((skill) => (
-                  <span key={skill} className="px-3 py-1 rounded-full bg-gray-100 text-gray-700 text-sm">
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            <div className="bg-white border border-gray-200 rounded-xl p-6">
-              <h3 className="font-bold text-gray-900 mb-4">Technical</h3>
-              <div className="flex flex-wrap gap-2">
-                {["Next.js", "React", "TypeScript", "SQL", "APIs", "AI/LLMs"].map((skill) => (
-                  <span key={skill} className="px-3 py-1 rounded-full bg-gray-100 text-gray-700 text-sm">
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
+        {/* CTA */}
+        <section className="border-t border-gray-200 pt-12">
+          <div className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-2xl p-12 text-center">
+            <h2 className="text-3xl font-bold text-white mb-4">Let's build something</h2>
+            <p className="text-gray-200 mb-8 max-w-2xl mx-auto">
+              If you're building AI-first products and value PMs who ship—let's talk.
+            </p>
+            <Link href="/contact" className="inline-flex items-center px-6 py-3 bg-white text-gray-900 rounded-lg hover:bg-gray-100 transition-colors font-medium">
+              Get in touch
+            </Link>
           </div>
         </section>
       </div>
