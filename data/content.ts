@@ -38,7 +38,7 @@ export const buildLog: BuildLogEntry[] = [
     date: "2025-01",
     status: "Completed",
     tags: ["AI", "Next.js", "Product"],
-    link: "https://resume-tailor-ai-nine.vercel.app",
+    link: "https://resume-tailor-nu-six.vercel.app",
     github: "https://github.com/yourusername/resume-builder",
   },
   {
