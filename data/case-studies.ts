@@ -271,7 +271,7 @@ export const caseStudies: CaseStudy[] = [
     duration: "2025",
     category: "Builder",
     thumbnail: "/images/resume-builder.jpg",
-    link: "https://resume-tailor-ai-nine.vercel.app",
+    link: "https://resume-tailor-nu-six.vercel.app",
     problem: "As a PM, I wanted to deeply understand AI integration, LLM prompting, and building consumer products. Rather than just reading about it, I decided to build a real product that solves a problem I personally experienced: tailoring resumes for different roles.",
     opportunity: "This project was an opportunity to master the full product development lifecycle—from idea to shipped product—while learning AI/ML integration, modern web development, and user-centric design.",
     hypothesis: "By building an AI-powered tool from scratch, I can demonstrate technical depth, product thinking, and the ability to ship quickly—skills that make me a better PM and collaborator with engineering teams.",
