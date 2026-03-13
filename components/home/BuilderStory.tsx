@@ -9,7 +9,7 @@ const projects = [
     name: "AI Resume Optimizer",
     description: "Parses job descriptions with GPT-4, extracts requirements, tailors resume content",
     tech: ["Next.js", "GPT-4 API", "TypeScript"],
-    link: "https://resume-tailor-ai-nine.vercel.app",
+    link: "https://resume-tailor-nu-six.vercel.app",
     learning: "Prompt engineering, LLM integration, AI product UX",
   },
   {
