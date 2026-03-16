@@ -8,7 +8,7 @@ const experiences = [
   {
     company: "Rocket Mortgage",
     role: "Digital Product Manager",
-    period: "2024-2025",
+    period: "March 2024 - Present",
     highlights: ["$4.2M revenue impact", "18% conversion increase", "12+ A/B tests"],
   },
   {

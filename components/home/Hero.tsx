@@ -43,7 +43,7 @@ export default function Hero() {
             transition={{ delay: 0.3 }}
             className="text-xl sm:text-2xl text-gray-600 mb-12 max-w-3xl leading-relaxed"
           >
-            I drive product strategy, run experiments, and ship code. Former PM at <span className="text-gray-900 font-semibold">Rocket Mortgage</span> and <span className="text-gray-900 font-semibold">Upstart</span>. In 2026, I became a builder—launching 3 AI-powered web apps and mastering the full product development cycle.
+            I drive product strategy, run experiments, and ship code. Currently PM at <span className="text-gray-900 font-semibold">Rocket Mortgage</span>. Previously at <span className="text-gray-900 font-semibold">Upstart</span>. In 2026, I became a builder—launching 3 AI-powered web apps and mastering the full product development cycle.
           </motion.p>
 
           {/* CTAs */}

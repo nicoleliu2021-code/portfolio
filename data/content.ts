@@ -5,7 +5,7 @@ export const blogPosts: BlogPost[] = [
     id: "experimentation-framework",
     title: "Building a Growth Experimentation Framework",
     excerpt: "How to build a systematic approach to testing that drives measurable results. Includes hypothesis development, test design, and decision frameworks.",
-    date: "2024-01-15",
+    date: "2025-01-15",
     readTime: "8 min",
     tags: ["Experimentation", "Growth", "Framework"],
     content: `Experimentation is the foundation of modern product development, but most teams struggle to run tests systematically...`,
@@ -14,7 +14,7 @@ export const blogPosts: BlogPost[] = [
     id: "product-discovery",
     title: "Product Discovery: Finding Problems Worth Solving",
     excerpt: "A practical guide to product discovery - from user research to problem validation to solution ideation.",
-    date: "2024-02-20",
+    date: "2023-06-20",
     readTime: "10 min",
     tags: ["Product Strategy", "Discovery", "User Research"],
     content: `Product discovery is about reducing risk before you build...`,
@@ -33,19 +33,19 @@ export const blogPosts: BlogPost[] = [
 export const buildLog: BuildLogEntry[] = [
   {
     id: "build-001",
-    title: "AI Resume Builder",
-    description: "Built an AI-powered tool that analyzes job descriptions and tailors resume content. Uses GPT-4 for analysis, Next.js for the frontend, and generates PDFs on demand.",
-    date: "2025-01",
+    title: "ResumeFit - AI Resume Optimizer SaaS",
+    description: "Production SaaS (React + FastAPI + GPT-4) that tailors resumes to job descriptions. Features: PDF/DOCX parsing, inline AI editing, 6 templates, freemium model with referral system, exit-intent modals (18% capture rate), and viral growth mechanics. Deployed on Railway + Vercel with 500+ users and 12% free-to-paid conversion.",
+    date: "2026",
     status: "Completed",
-    tags: ["AI", "Next.js", "Product"],
-    link: "https://resume-tailor-nu-six.vercel.app",
-    github: "https://github.com/yourusername/resume-builder",
+    tags: ["AI", "SaaS", "Full-Stack", "Python", "FastAPI", "React", "Product-Led Growth"],
+    link: "https://resume-tailor-ai-production-1944.up.railway.app",
+    github: "https://github.com/nicoleliu2021-code/resume-tailor",
   },
   {
     id: "build-002",
     title: "Tutor Marketplace",
     description: "Two-sided marketplace connecting tutors with students. Features include search, filtering, messaging, reviews, and payment processing. Built with Next.js and Stripe.",
-    date: "2025-12",
+    date: "2026",
     status: "Completed",
     tags: ["Marketplace", "Next.js", "Stripe"],
     link: "https://tutor-marketplace.example.com",
@@ -86,8 +86,8 @@ export const workExperience: WorkExperience[] = [
   {
     company: "Rocket Mortgage",
     role: "Digital Product Manager",
-    duration: "2024 - 2025",
-    description: "Led digital product strategy and execution for mortgage application funnel, focusing on CRO, personalization, and experimentation.",
+    duration: "March 2024 - Present",
+    description: "Leading digital product strategy and execution for mortgage application funnel, focusing on CRO, personalization, and experimentation.",
     achievements: [
       "Increased visit-to-lead conversion by 18% through intent-based personalization and funnel optimization",
       "Drove $4.2M in annual revenue through experimentation program (12+ tests)",
@@ -99,7 +99,7 @@ export const workExperience: WorkExperience[] = [
   {
     company: "Technical Skill Development",
     role: "Analytics & Product Foundations",
-    duration: "2023",
+    duration: "2023-2023",
     description: "Intentionally leveled up technical and analytics capabilities to transition from growth marketing into product management. Completed hands-on analytics projects with startups, mastered SQL and visualization tools, and built reusable frameworks—creating a foundation for data-driven product work.",
     achievements: [
       "Completed volunteer analytics projects with 2 early-stage startups to gain hands-on experience with product metrics, funnels, and cohort analysis",
@@ -138,7 +138,7 @@ export const workExperience: WorkExperience[] = [
   {
     company: "DENSO",
     role: "MBA Strategy Consultant",
-    duration: "2020",
+    duration: "2020-2020",
     description: "Conducted strategic analysis of mobility market and robotaxi opportunity for automotive supplier during MBA program.",
     achievements: [
       "Analyzed $50B+ robotaxi market opportunity and developed market entry strategy",

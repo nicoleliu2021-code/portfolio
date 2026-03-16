@@ -7,7 +7,7 @@ const capabilities = [
   {
     icon: Target,
     title: "Product Strategy & Growth",
-    description: "Led CRO and personalization at Rocket Mortgage, driving $4.2M in revenue through 30+ experiments. Built intent-based segmentation that improved conversion by 18%. Previously scaled Upstart's acquisition, reducing CAC 28% while growing volume 42%.",
+    description: "Leading CRO and personalization at Rocket Mortgage, driving $4.2M in revenue through 30+ experiments. Built intent-based segmentation that improved conversion by 18%. Previously scaled Upstart's acquisition, reducing CAC 28% while growing volume 42%.",
     proof: [
       "18.2% visit→lead conversion (Rocket Mortgage)",
       "28% CAC reduction (Upstart)",

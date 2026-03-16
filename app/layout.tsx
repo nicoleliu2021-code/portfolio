@@ -11,8 +11,16 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Xuejing Liu | Product Manager Portfolio",
-  description: "AI-first Product Manager who ships products, runs experiments, and writes code. Former PM at Rocket Mortgage and Upstart. Built 3 AI-powered web apps in 2026.",
+  description: "AI-first Product Manager who ships products, runs experiments, and writes code. Currently PM at Rocket Mortgage. Previously at Upstart. Built 3 AI-powered web apps in 2026.",
   keywords: ["Product Manager", "Product Management", "AI Product", "Growth", "Experimentation", "Analytics", "Builder"],
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
+  },
 };
 
 export default function RootLayout({

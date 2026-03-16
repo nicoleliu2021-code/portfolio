@@ -10,7 +10,7 @@ import FinalCTA from "@/components/home/FinalCTA";
 
 export const metadata = {
   title: "Xuejing Liu | AI-First Product Manager & Builder",
-  description: "Product Manager who ships AI products, runs experiments, and writes code. Former PM at Rocket Mortgage and Upstart. Built 3 production web apps in 2026.",
+  description: "Product Manager who ships AI products, runs experiments, and writes code. Currently PM at Rocket Mortgage. Previously at Upstart. Built 3 production web apps in 2026.",
 };
 
 export default function Home() {

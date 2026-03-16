@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Github, MessageSquare } from "lucide-react";
+import { Linkedin, Github } from "lucide-react";
 
 export const metadata = {
   title: "Contact | Product Manager Portfolio",
@@ -22,24 +22,9 @@ export default function ContactPage() {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          {/* Email */}
-          <a
-            href="mailto:your.email@example.com"
-            className="group bg-white border border-gray-200 rounded-2xl p-8 hover:border-gray-300 hover:shadow-lg transition-all duration-300"
-          >
-            <div className="flex items-center gap-4 mb-4">
-              <div className="p-4 rounded-xl bg-blue-100 group-hover:bg-blue-600 transition-colors">
-                <Mail className="h-8 w-8 text-blue-600 group-hover:text-white transition-colors" />
-              </div>
-              <h2 className="text-2xl font-bold text-gray-900">Email</h2>
-            </div>
-            <p className="text-gray-600 mb-2">Drop me a line anytime</p>
-            <p className="text-blue-600 font-medium">your.email@example.com</p>
-          </a>
-
           {/* LinkedIn */}
           <a
-            href="https://linkedin.com/in/yourprofile"
+            href="https://linkedin.com/in/xuejingliu"
             target="_blank"
             rel="noopener noreferrer"
             className="group bg-white border border-gray-200 rounded-2xl p-8 hover:border-gray-300 hover:shadow-lg transition-all duration-300"
@@ -50,13 +35,13 @@ export default function ContactPage() {
               </div>
               <h2 className="text-2xl font-bold text-gray-900">LinkedIn</h2>
             </div>
-            <p className="text-gray-600 mb-2">Connect professionally</p>
-            <p className="text-blue-600 font-medium">linkedin.com/in/yourprofile</p>
+            <p className="text-gray-600 mb-2">Let's connect and message me</p>
+            <p className="text-blue-600 font-medium">linkedin.com/in/xuejingliu</p>
           </a>
 
           {/* GitHub */}
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/nicoleliu2021-code"
             target="_blank"
             rel="noopener noreferrer"
             className="group bg-white border border-gray-200 rounded-2xl p-8 hover:border-gray-300 hover:shadow-lg transition-all duration-300"
@@ -68,24 +53,7 @@ export default function ContactPage() {
               <h2 className="text-2xl font-bold text-gray-900">GitHub</h2>
             </div>
             <p className="text-gray-600 mb-2">Check out my code</p>
-            <p className="text-blue-600 font-medium">github.com/yourusername</p>
-          </a>
-
-          {/* Twitter/X */}
-          <a
-            href="https://twitter.com/yourhandle"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group bg-white border border-gray-200 rounded-2xl p-8 hover:border-gray-300 hover:shadow-lg transition-all duration-300"
-          >
-            <div className="flex items-center gap-4 mb-4">
-              <div className="p-4 rounded-xl bg-gray-100 group-hover:bg-gray-900 transition-colors">
-                <MessageSquare className="h-8 w-8 text-gray-700 group-hover:text-white transition-colors" />
-              </div>
-              <h2 className="text-2xl font-bold text-gray-900">Twitter</h2>
-            </div>
-            <p className="text-gray-600 mb-2">Follow for product insights</p>
-            <p className="text-blue-600 font-medium">@yourhandle</p>
+            <p className="text-blue-600 font-medium">github.com/nicoleliu2021-code</p>
           </a>
         </div>
 
@@ -98,11 +66,13 @@ export default function ContactPage() {
             help drive impact at your company.
           </p>
           <a
-            href="mailto:your.email@example.com"
+            href="https://linkedin.com/in/xuejingliu"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 bg-white text-gray-900 rounded-lg font-medium hover:bg-gray-100 transition-colors"
           >
-            <Mail className="h-5 w-5" />
-            Get in Touch
+            <Linkedin className="h-5 w-5" />
+            Message on LinkedIn
           </a>
         </div>
 

@@ -333,6 +333,47 @@ ${result.recommendedCaseStudies.join(', ')}
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+      {/* Production Callout Banner */}
+      <div className="max-w-5xl mx-auto mb-8">
+        <div className="bg-gradient-to-r from-blue-50 to-purple-50 border-2 border-blue-200 rounded-2xl p-6">
+          <div className="flex items-start gap-4">
+            <div className="flex-shrink-0">
+              <div className="h-12 w-12 rounded-xl bg-blue-600 flex items-center justify-center">
+                <Sparkles className="h-6 w-6 text-white" />
+              </div>
+            </div>
+            <div className="flex-1">
+              <h3 className="text-lg font-bold text-gray-900 mb-2">
+                📌 This is a simplified portfolio demo
+              </h3>
+              <p className="text-gray-700 mb-4 leading-relaxed">
+                The production <strong>ResumeFit SaaS</strong> includes GPT-4 semantic analysis,
+                PDF/DOCX resume parsing, 6 professional templates, inline AI editing,
+                and a freemium model with 500+ users and 12% conversion rate.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href="/work/resumefit-saas"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-gray-900 text-white rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors"
+                >
+                  View Full Case Study
+                  <ArrowRight className="h-4 w-4" />
+                </a>
+                <a
+                  href="https://resume-tailor-ai-production-1944.up.railway.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-white border-2 border-gray-300 text-gray-900 rounded-lg text-sm font-medium hover:border-gray-400 transition-colors"
+                >
+                  Try Production Version
+                  <ArrowRight className="h-4 w-4" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Header */}
       <div className="text-center max-w-4xl mx-auto mb-12">
         <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-purple-50 to-blue-50 border border-purple-200 text-purple-700 text-sm font-medium mb-6">

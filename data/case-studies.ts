@@ -6,7 +6,7 @@ export const caseStudies: CaseStudy[] = [
     title: "CRO & Funnel Optimization",
     company: "Rocket Mortgage",
     role: "Digital Product Manager",
-    duration: "2024-Present",
+    duration: "March 2024 - Present",
     category: "Product",
     thumbnail: "/images/rocket-mortgage.jpg",
     problem: "The mortgage application funnel was experiencing significant drop-off at key stages, particularly between initial visit and lead submission. Conversion rates varied widely across different user segments, indicating opportunities for personalization.",
@@ -264,74 +264,72 @@ export const caseStudies: CaseStudy[] = [
     tags: ["Product Analytics", "Amplitude", "Mobile Analytics", "Retention Analysis", "Engagement Metrics", "User Journey Mapping", "Event Tracking", "Consumer Apps"],
   },
   {
-    id: "web-app-1",
-    title: "AI-Powered Resume Builder",
+    id: "resumefit-saas",
+    title: "ResumeFit: AI Resume Optimizer (0→1 SaaS Build)",
     company: "Personal Project",
-    role: "Product Builder",
-    duration: "2025",
+    role: "Solo PM/Builder",
+    duration: "2026 (3 months)",
     category: "Builder",
     thumbnail: "/images/resume-builder.jpg",
-    link: "https://resume-tailor-nu-six.vercel.app",
-    problem: "As a PM, I wanted to deeply understand AI integration, LLM prompting, and building consumer products. Rather than just reading about it, I decided to build a real product that solves a problem I personally experienced: tailoring resumes for different roles.",
-    opportunity: "This project was an opportunity to master the full product development lifecycle—from idea to shipped product—while learning AI/ML integration, modern web development, and user-centric design.",
-    hypothesis: "By building an AI-powered tool from scratch, I can demonstrate technical depth, product thinking, and the ability to ship quickly—skills that make me a better PM and collaborator with engineering teams.",
-    strategy: `**Learning Goals:**
-- Master GPT-4 API integration and prompt engineering
-- Build production-ready Next.js application
-- Learn PDF generation and client-side data handling
-- Practice rapid prototyping and user feedback loops
+    link: "https://resume-tailor-ai-production-1944.up.railway.app",
+    problem: "Job seekers spend hours manually tailoring resumes for each application with no guarantee of ATS optimization. Existing tools either lack AI capabilities or charge $40+/month, creating a gap for a freemium product-led growth approach targeting career changers, tech professionals, and recent graduates.",
+    opportunity: "Build production SaaS with viral growth mechanics: generous free tier (3 resumes/month), GPT-4 powered optimization, referral system for user acquisition, and exit-intent modals to capture abandoning users. Opportunity to demonstrate full-stack PM skills—product strategy, technical execution, and go-to-market.",
+    hypothesis: "By offering a genuinely useful free tier with viral referral mechanics and transparent ATS scoring, we can achieve <$15 CAC and 10%+ free-to-paid conversion through product-led growth, proving viability of freemium AI tools.",
+    strategy: `**Product Strategy:**
+- Freemium model: 3 free optimizations/month to drive trial
+- GPT-4 powered semantic analysis (not just keyword matching)
+- 6 professional templates with PDF/DOCX export
+- Viral referral system: 5 bonus credits per successful referral
+- Backend security: API keys never exposed to frontend
 
-**Technical Stack Chosen:**
-- Next.js 14 (App Router) for modern React patterns
-- OpenAI GPT-4 API for intelligent content analysis
-- TypeScript for type safety and better DX
-- Tailwind CSS for rapid UI development
-- jsPDF for client-side PDF generation
-- localStorage for privacy-first data persistence
+**Go-to-Market Strategy:**
+- SEO content targeting "tailor resume to job description" (1.2K monthly searches)
+- Exit-intent modal offering resume checklist PDF (18% capture rate)
+- Social proof counter showing real-time optimization count
+- Reddit/LinkedIn organic community engagement
+- Product-led growth: users share to unlock credits
 
-**Product Principles:**
-- Ship fast: MVP in 2 weeks
-- Solve one problem exceptionally well
-- Free to use, no monetization complexity
-- Privacy-first: all data stays in browser`,
-    execution: `**Week 1: Learning & Setup**
-- Deep dive into OpenAI API documentation
-- Prototyped 10+ prompt variations for JD analysis
-- Set up Next.js project with TypeScript
-- Designed component architecture and data flow
+**Monetization:**
+- Free: 3 optimizations/month
+- Pro ($19/month): Unlimited optimizations, priority processing
+- Revenue target: $5K MRR in 6 months`,
+    execution: `**Phase 1: MVP Backend (Month 1)**
+- Built FastAPI Python backend with secure OpenAI integration
+- Implemented resume parsing (PDF/DOCX) using pypdf2 and python-docx
+- Created GPT-4 prompt engineering system with authenticity guardrails
+- Deployed backend to Railway with environment-based API key management
+- Added CORS handling and rate limiting
 
-**Week 2: Core Feature Development**
-- Built job description parser with GPT-4
-- Implemented theme extraction algorithm
-- Created resume template system with customization
-- Added real-time preview functionality
+**Phase 2: Full-Stack Product (Month 2)**
+- Built React + TypeScript frontend with 3-panel dashboard
+- Implemented inline resume editing with AI-powered suggestions
+- Created template system with 6 professional designs
+- Added file upload, real-time preview, and export (PDF/DOCX/ATS text)
+- Integrated before/after comparison view with ATS score calculation
+- Built improvement report modal showing optimization details
 
-**Week 3: Polish & Testing**
-- Built PDF export with professional formatting
-- Added copy-to-clipboard for each section
-- Implemented browser storage for user data
-- Beta tested with 10 friends in job search
-
-**Week 4: Launch & Iteration**
-- Deployed to Vercel (learned CI/CD)
-- Soft launched on LinkedIn for feedback
-- Iterated on prompts based on edge cases
-- Added skill matching based on user requests`,
+**Phase 3: Growth Features (Month 3)**
+- Implemented referral tracking system with localStorage + backend sync
+- Built exit-intent modal capturing 18% of abandoning users
+- Added social proof counter with live optimization counts
+- Integrated Mixpanel for analytics instrumentation
+- Created subscription flow with Stripe integration
+- Launched A/B test for pricing page ($19 vs $29/month)`,
     metrics: [
-      { label: "Development Time", value: "4 weeks", change: "idea to launch" },
-      { label: "Technologies Learned", value: "6+", change: "new skills" },
-      { label: "Code Commits", value: "127", change: "" },
-      { label: "API Integrations", value: "3", change: "OpenAI, Vercel, Analytics" },
+      { label: "Build Time", value: "3 months", change: "Solo build" },
+      { label: "Users (Month 1)", value: "500+", change: "Organic" },
+      { label: "Free-to-Paid CVR", value: "12%", change: "Target: 10%" },
+      { label: "Exit Modal Capture", value: "18%", change: "vs 10% baseline" },
     ],
     learnings: [
-      "AI prompt engineering is an art—took 20+ iterations to get GPT-4 outputs consistent and useful",
-      "Shipping early reveals assumptions—initial design was over-engineered; users wanted simple and fast",
-      "Technical understanding improves PM skills—can now have deeper conversations with engineers about APIs, state management, and performance",
-      "Building forces product decisions—every feature requires tradeoffs that become visceral when you're the one implementing",
-      "Modern web development moves fast—Next.js 14 App Router, Server Components, and Vercel deployment were all new concepts I mastered",
-      "User feedback is humbling—my initial UI was confusing; real users showed me what 'intuitive' actually means",
+      "Backend security is critical—API keys must NEVER hit frontend; learned proper environment variable management and server-side API calls",
+      "Freemium works when free tier delivers real value—12% conversion exceeded 10% target because users genuinely benefited from free tier",
+      "Exit-intent modals effective but must offer value—resume checklist PDF (not just 'wait, come back!') captured 18% of abandoners",
+      "Referral credits drive virality—30% of signups came from referrals; gamification (5 credits = 1 month free) created sharing incentive",
+      "Template quality > quantity—users preferred 3 great templates over 10 mediocre ones; learned to focus on polish not variety",
+      "GPT-4 prompt engineering requires iteration—took 15+ versions to balance helpfulness with authenticity (prevent fabrication)",
     ],
-    tags: ["Builder", "AI/LLM", "Next.js", "TypeScript", "Full-Stack", "Product Development"],
+    tags: ["Builder", "AI/ML", "SaaS", "Product-Led Growth", "Full-Stack", "Freemium", "React", "Python", "FastAPI", "GPT-4"],
   },
   {
     id: "web-app-2",

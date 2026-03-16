@@ -18,17 +18,15 @@ export default function ResumePage() {
           <div className="flex items-center justify-between">
             <div>
               <h1 className="text-4xl font-bold text-gray-900 mb-2">
-                Your Name
+                Xuejing Liu
               </h1>
               <p className="text-xl text-gray-600">
                 Product Manager | Growth | Builder
               </p>
               <div className="flex items-center gap-4 mt-4 text-sm text-gray-600">
-                <span>your.email@example.com</span>
+                <span>linkedin.com/in/xuejingliu</span>
                 <span>•</span>
-                <span>linkedin.com/in/yourprofile</span>
-                <span>•</span>
-                <span>github.com/yourusername</span>
+                <span>github.com/nicoleliu2021-code</span>
               </div>
             </div>
             <Button onClick={handleDownload} variant="primary">
@@ -101,14 +99,12 @@ export default function ResumePage() {
           <div className="border-l-2 border-gray-200 pl-6">
             <div className="mb-4">
               <h3 className="text-xl font-bold text-gray-900">MBA</h3>
-              <p className="text-gray-600">University Name</p>
-              <p className="text-sm text-gray-500">2019 - 2021</p>
+              <p className="text-gray-600">University of Michigan</p>
             </div>
 
             <div>
-              <h3 className="text-xl font-bold text-gray-900">BS Engineering</h3>
-              <p className="text-gray-600">University Name</p>
-              <p className="text-sm text-gray-500">2005 - 2009</p>
+              <h3 className="text-xl font-bold text-gray-900">BS</h3>
+              <p className="text-gray-600">Yanshan University</p>
             </div>
           </div>
         </section>

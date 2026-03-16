@@ -1,9 +1,9 @@
 import ResumeTailor from "@/components/ai-resume-tailor/ResumeTailor";
 
 export const metadata = {
-  title: "AI Resume Tailor | Tailor Your Resume in Seconds",
-  description: "Paste a job description and get ATS-optimized resume bullets, keyword matches, and tailored content instantly. Free AI-powered resume optimization tool.",
-  keywords: ["resume tailor", "ATS optimization", "job application", "resume keywords", "AI resume", "resume optimizer"],
+  title: "ResumeFit Demo | AI Resume Optimizer",
+  description: "Interactive demo of ResumeFit, a production SaaS that uses GPT-4 to optimize resumes for job descriptions. Full version includes PDF/DOCX parsing, 6 templates, and inline AI editing.",
+  keywords: ["resume tailor", "ATS optimization", "job application", "resume keywords", "AI resume", "resume optimizer", "ResumeFit"],
 };
 
 export default function AIResumeTailorPage() {
