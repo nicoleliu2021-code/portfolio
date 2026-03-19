@@ -115,103 +115,344 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     id: "chime-cash-offer",
-    title: "$350 Cash Offer Campaign: Fintech Acquisition at Scale",
-    company: "Chime (Hypothetical Case Study)",
-    role: "Growth Product Marketing Manager",
-    duration: "Q1 2025 (4 months)",
+    title: "Strategic Framework: Launching Chime's $350 Cash Offer",
+    company: "Chime (Strategy Case Study)",
+    role: "Growth Product Marketing Strategy",
+    duration: "Strategic Planning Exercise",
     category: "Growth",
     thumbnail: "/images/chime-cash-offer.webp",
-    problem: "Chime needed to accelerate new account growth in a competitive neobank market where customer acquisition costs (CAC) were rising 20% YoY. Traditional $50-100 signup bonuses were no longer differentiating us from competitors (Current, Varo, Dave). Customer research revealed that while our product was competitive, users needed a stronger incentive to overcome switching friction from incumbent banks.",
-    opportunity: "Launch aggressive $350 cash offer campaign to drive step-change in acquisition volume while maintaining unit economics. Opportunity to test premium incentive tier, build fraud prevention systems, optimize multi-channel performance marketing, and establish playbook for future high-value offer campaigns.",
-    hypothesis: "A $350 cash offer (3.5x typical signup bonus) would drive 250%+ lift in account signups by creating viral word-of-mouth and paid channel efficiency gains, while qualifying requirements (direct deposit + spending threshold) would ensure user quality and offset promotional costs through interchange revenue within 6 months.",
-    strategy: `**Offer Structure & Qualifying Actions:**
-- $350 bonus for new customers who complete:
-  - Account signup + verification (KYC)
-  - Direct deposit of $200+ within 45 days
-  - 10+ debit card purchases within 60 days
-- Designed to attract primary account switchers, not bonus hunters
-- 60-day qualification window to encourage habit formation
+    problem: "Chime wants to launch a $350 cash offer to accelerate new account acquisition in a competitive neobank market. The challenge: How do we design, test, and scale this campaign to maximize user acquisition while maintaining profitability and preventing fraud? What's the right incentive amount? How should we structure qualifying requirements? Which channels will perform best?",
+    opportunity: "Develop a comprehensive launch strategy that balances aggressive growth targets with unit economics. Opportunity to demonstrate strategic thinking: defining success metrics, designing experiments to find optimal configuration, building risk mitigation systems, and creating a scalable playbook.",
+    hypothesis: "By systematically testing incentive amounts, qualifying requirements, channel mix, and creative approaches through a phased rollout, we can identify the optimal campaign structure that drives significant volume lift while maintaining positive unit economics and acceptable fraud rates.",
+    strategy: `**Step 1: Define Business Objectives & Success Criteria**
 
-**Fraud Prevention & Risk Management:**
-- Cross-functional collaboration with Fraud, Compliance, Legal teams
-- Multi-layer fraud detection: device fingerprinting, velocity checks, synthetic ID detection
-- Bonus clawback mechanisms for suspicious patterns
-- Real-time monitoring dashboard for anomaly detection
-- Daily fraud rate review with auto-pause triggers at 5% threshold
+Before launching, align stakeholders on what success looks like:
 
-**Channel Strategy & Budget Allocation:**
-- Reallocated $12M from baseline CAC budget into high-intent channels
-- Paid Social (45%): Meta, TikTok with lookalike audiences
-- Paid Search (25%): Branded + competitor keywords
-- Affiliate/Influencer (15%): Personal finance creators, deal sites
-- Organic/Viral (10%): Referral program integration, PR push
-- Display/Retargeting (5%): Awareness layer
+*Primary Goal:* Drive incremental new account growth
+- Target: 3x baseline new account acquisition rate
+- Constraint: Maintain LTV:CAC ratio ≥ 2.5x within 12 months
+- Risk tolerance: Max 5% fraud rate, $15M campaign budget
 
-**Creative & Messaging Testing:**
-- Tested messaging angles: "Get $350" vs "Earn $350" vs "Claim $350"
-- A/B tested value framing: dollar amount vs percentage APY equivalent
-- Optimized for different audiences: students, gig workers, paycheck-to-paycheck
-- Built creative refresh cadence (new assets every 2 weeks) to combat fatigue
+*Key Questions to Answer Through Testing:*
+1. What incentive amount optimizes volume vs. cost?
+2. What qualifying actions balance acquisition with activation?
+3. Which channels drive highest-quality users at scale?
+4. How do we prevent fraud without killing conversion?
 
-**Lifecycle & Activation Optimization:**
-- Email nurture sequences for incomplete qualifications
-- Push notifications for deposit/spend milestones
-- In-app progress trackers showing "$150 away from bonus!"
-- SMS reminders at Days 30, 40 for pending qualifications`,
-    execution: `**Phase 1: Pre-Launch Planning & Legal Review (Weeks 1-3)**
-- Secured Legal/Compliance approval for promotional terms across 50 states
-- Built fraud risk models using historical promo abuse patterns
-- Designed qualification logic and edge case handling
-- Created multi-variant landing pages for A/B testing
-- Aligned cross-functional teams: Product, Engineering, Marketing, Finance, Risk
+*Success Metrics Framework:*
+- Acquisition: New accounts, cost per acquisition (CPA)
+- Quality: Qualification rate, direct deposit adoption, 90-day retention
+- Economics: LTV, payback period, incremental revenue
+- Risk: Fraud rate, abuse patterns, legal/compliance issues
 
-**Phase 2: Soft Launch & Testing (Week 4-5)**
-- Soft launched in 5 test markets (10% of budget)
-- Tested 8 creative variants across Meta/TikTok
-- Validated fraud detection systems with real traffic
-- Identified winner creative: "Get $350 when you make Chime your primary bank"
-- Confirmed CAC target achievable: $145 blended (vs $180 baseline)
-- Fraud rate at 2.8% (below 5% threshold)
+**Step 2: Incentive Amount Testing (Find the Sweet Spot)**
 
-**Phase 3: National Scale & Optimization (Week 6-10)**
-- Scaled to 100% national launch across all channels
-- Ran 20+ landing page experiments (headline, CTA, trust signals)
-- Implemented dynamic budget reallocation: shifted 15% from underperforming Display to Meta
-- Launched affiliate partnerships with NerdWallet, Credit Karma, TikTok finance creators
-- Built real-time dashboard tracking: signups, qualifications, fraud rate, CAC by channel
-- Introduced "Tell a Friend" bonus stacking: $50 referral bonus on top of $350
+*The Core Question:* Is $350 the right number, or should we test $200, $250, $300?
 
-**Phase 4: Lifecycle Activation & Conversion (Week 11-16)**
-- Sent personalized email/SMS sequences based on qualification status
-- Implemented in-app progress tracker: "You're $200 away from your $350 bonus!"
-- Retargeted incomplete qualifications with display ads
-- Reduced qualification drop-off from 42% to 31% through nudges
-- Launched "Last Chance" email campaign for users at Day 50/60
+*Hypothesis:* Higher incentives drive volume but attract bonus hunters; need to find inflection point where volume gains justify cost increases.
 
-**Phase 5: Analysis & Iteration (Month 4)**
-- Deep-dive cohort analysis on qualified vs. non-qualified users
-- LTV modeling to validate payback period assumptions
-- Post-campaign survey to understand user motivations
-- Documented learnings for future high-value offer campaigns
-- Presented results to executive team with recommendations`,
+*Experimental Design:*
+- Run multi-arm test in controlled markets (10% of budget, 4 weeks)
+- Test arms: $200 / $250 / $300 / $350 cash offers
+- Hold constant: qualifying requirements, channels, creative
+- Measure: signup volume, qualification rate, 90-day LTV by cohort
+
+*Decision Framework:*
+- If $350 drives <25% more volume than $300 → not worth premium cost
+- If $350 attracts materially worse users (lower qualification rate, LTV) → scale back
+- If $350 drives 50%+ volume lift with similar user quality → winner
+
+*Risk Mitigation:*
+- Cap test spend at $1.5M across all arms
+- Real-time monitoring for fraud spikes (auto-pause at 7% fraud rate)
+- Exit criteria: if any arm hits unsustainable CAC ($250+), kill it
+
+**Step 3: Qualifying Requirements Design**
+
+*The Core Question:* How do we structure qualifications to ensure high-quality users without creating too much friction?
+
+*Hypothesis:* Direct deposit requirements filter for "primary account" switchers; spending thresholds prove activation; time windows encourage urgency.
+
+*Variables to Test:*
+1. Direct deposit threshold: $200 / $500 / $1,000
+2. Debit card purchases: 5 / 10 / 15 transactions
+3. Time window: 30 / 45 / 60 days
+4. Bonus payout structure: All at once vs. tiered ($100 at deposit + $250 at transactions)
+
+*Experimental Approach:*
+- Test 3 qualification structures simultaneously (market-level randomization)
+- Variant A (Low friction): $200 DD + 5 purchases in 60 days
+- Variant B (Medium friction): $500 DD + 10 purchases in 45 days
+- Variant C (High friction): $1,000 DD + 15 purchases in 30 days
+
+*Decision Criteria:*
+- Track: Qualification rate, time-to-qualify, 90-day retention, LTV
+- Goal: Maximize qualification rate while maintaining retention ≥ 70%
+- If Variant A qualifies 80% but retains only 50% → too loose
+- If Variant C qualifies 40% but retains 90% → too tight
+- Winning structure likely in the middle (Variant B)
+
+**Step 4: Fraud Prevention Strategy**
+
+*The Core Question:* How do we detect and prevent fraud before it scales?
+
+*Pre-Launch Risk Assessment:*
+- Analyze historical promo abuse patterns from previous campaigns
+- Identify red flags: synthetic IDs, velocity attacks, return abuse
+- Set acceptable fraud loss budget: 3-5% of total campaign spend
+
+*Multi-Layer Detection System:*
+1. **Application Level:** Device fingerprinting, email/phone validation, OFAC screening
+2. **Behavioral Signals:** Velocity checks (max 5 signups per device/IP), suspicious direct deposit patterns
+3. **Post-Qualification:** Manual review for high-risk cases (flagged by ML model)
+4. **Bonus Clawback:** 90-day monitoring window, automated reversals for confirmed fraud
+
+*Monitoring Dashboard (Real-Time):*
+- Fraud rate by channel, geography, device type
+- Auto-pause triggers: If fraud rate >7% or daily losses >$50K, pause campaign
+- Daily cross-functional review with Fraud/Risk teams
+
+*Testing Approach:*
+- Soft launch with enhanced monitoring (2 weeks, 5% budget)
+- Stress-test fraud systems with known attack patterns
+- Iterate detection rules before full-scale launch
+
+**Step 5: Channel Strategy & Budget Allocation**
+
+*The Core Question:* Which channels drive the highest-quality users at the lowest cost?
+
+*Initial Hypothesis:*
+- Paid Social (Meta/TikTok): High volume, younger demo, cost-effective
+- Paid Search: High intent, competitor keywords, premium CPAs
+- Affiliates: Scalable volume, deal-seekers, variable quality
+- Organic/Referral: Best quality, lowest CAC, hardest to scale
+
+*Phased Budget Allocation:*
+- **Week 1-2 (Learning Phase):** Allocate 25% budget evenly across channels
+- **Week 3-4 (Optimization):** Shift budget to top 2 performing channels
+- **Week 5+ (Scale):** 60% to winners, 20% to second-tier, 20% to testing
+
+*Channel-Level Experiments:*
+- Meta: Test lookalike audiences (existing customers vs. competitor customers vs. high-income zip codes)
+- TikTok: Test creator partnerships vs. in-feed ads vs. branded hashtag challenge
+- Paid Search: Test branded vs. competitor keywords vs. generic "best bank account"
+- Affiliates: Test personal finance bloggers vs. deal sites (Slickdeals, Reddit) vs. influencers
+
+*Decision Framework:*
+- Measure CAC, qualification rate, 90-day LTV by channel
+- Goal: CAC <$150, qualification rate >60%, LTV:CAC >2.5x
+- Reallocate weekly based on performance
+- Kill underperforming channels by Week 6
+
+**Step 6: Creative Testing & Messaging**
+
+*The Core Question:* What messaging resonates with our target audience?
+
+*Message Testing Framework:*
+1. **Value Framing:** "$350 cash bonus" vs. "Get $350" vs. "Earn up to $350"
+2. **Emotional Appeal:** Financial security vs. rewarding yourself vs. beating banks
+3. **Urgency:** "Limited time" vs. "While supplies last" vs. no urgency
+4. **Social Proof:** "500K+ members" vs. testimonials vs. press mentions
+
+*Creative Testing Grid (Week 1-3):*
+- Test 8-12 creative variants per channel
+- Rotate new creatives every 2 weeks (combat fatigue)
+- A/B test headline, imagery, CTA button separately
+- Winner criteria: CTR + conversion rate + quality score
+
+*Audience Segmentation:*
+- Students: "Build your financial future, get $350 to start"
+- Gig workers: "Your bank should work as hard as you do + $350 bonus"
+- Paycheck-to-paycheck: "Get paid early + $350 cash bonus"
+
+**Step 7: Lifecycle & Activation Strategy**
+
+*The Core Question:* How do we maximize qualification rates after signup?
+
+*Drop-Off Analysis:*
+- Identify where users stall: No direct deposit? Not enough transactions?
+- Hypothesis: Users forget requirements or underestimate effort
+
+*Activation Tactics:*
+1. **Progress Tracking:** In-app widget showing "You're $150 away from $350!"
+2. **Email Nurture:** Day 7, 14, 30, 45 reminders with clear next steps
+3. **SMS Nudges:** Day 30 "Set up direct deposit in 2 minutes" with deep link
+4. **Push Notifications:** "You have 15 days left to claim your $350!"
+5. **Retargeting Ads:** "Don't miss out on $350—complete your direct deposit"
+
+*A/B Tests:*
+- Test incentive framing: "$350 waiting for you" vs. "You're almost there!"
+- Test send frequency: Daily vs. weekly vs. milestone-based
+- Test channel mix: Email-only vs. email+SMS vs. omnichannel
+
+*Goal:* Increase qualification rate from 55% (baseline) to 70%+`,
+    execution: `**Phase 1: Pre-Launch Foundation (Weeks 1-4)**
+
+*Objective:* Build infrastructure, align teams, secure approvals
+
+*Key Activities:*
+- Legal/Compliance review: 50-state promotional terms approval
+- Fraud system setup: ML models, monitoring dashboards, auto-pause triggers
+- Landing page variants: Design 6 versions for A/B testing
+- Channel account setup: Meta Business Manager, Google Ads, affiliate contracts
+- Cross-functional alignment: Weekly syncs with Product, Engineering, Risk, Finance, Legal
+- Budget approval: Present business case to CFO with LTV models
+- Success metrics dashboard: Build real-time tracking in Looker/Tableau
+
+*Deliverables:*
+- Legal approval documentation
+- Fraud prevention playbook
+- Campaign landing pages (6 variants)
+- Analytics instrumentation complete
+- Campaign budget approved: $15M
+- Launch readiness review with exec team
+
+**Phase 2: Soft Launch Testing (Weeks 5-8)**
+
+*Objective:* Test core assumptions with 10% of budget before scaling
+
+*Geographic Markets:* Texas, Florida, Georgia, Ohio, Colorado (5 states, 15% of user base)
+
+*What We're Testing:*
+1. Incentive amounts: $200 vs $250 vs $300 vs $350 (random assignment)
+2. Qualifying requirements: 3 variants (Low/Medium/High friction)
+3. Creative messaging: 8 variants per channel
+4. Fraud detection: Validate ML models with real traffic
+
+*Channels:* Focus on Meta + TikTok for quick learning
+
+*Success Criteria (Must Pass to Scale):*
+- CAC <$175 (with buffer from $150 goal)
+- Qualification rate >55%
+- Fraud rate <5%
+- 90-day retention >65%
+- No major legal/compliance issues
+
+*Weekly Review Cadence:*
+- Day 3: First data check, fraud monitoring
+- Day 7: Channel performance review, budget reallocation
+- Day 14: Creative refresh based on fatigue signals
+- Day 21: Mid-test review with stakeholders
+- Day 28: Final analysis, go/no-go decision for national launch
+
+*Key Questions to Answer:*
+- Is $350 worth the premium cost vs. $300?
+- Which qualifying structure balances volume and quality?
+- Which creative messages drive best results?
+- Are fraud systems catching abuse effectively?
+
+**Phase 3: Optimization & Scale Decision (Weeks 9-10)**
+
+*Objective:* Analyze soft launch data and build national rollout plan
+
+*Data Analysis:*
+- Cohort analysis: Compare LTV by incentive amount, qualification structure, channel
+- Statistical significance: Ensure sample sizes sufficient (>1,000 users per variant)
+- Fraud deep-dive: Pattern analysis, false positive review
+- Channel efficiency: CAC, qualification rate, LTV by channel
+- Creative performance: CTR, conversion rate, quality score
+
+*Decision Framework:*
+- If results meet success criteria → Proceed to national launch
+- If mixed results → Run extended test (2 more weeks) or iterate variants
+- If results fail → Redesign campaign or kill
+
+*National Launch Plan:*
+- Winning incentive amount: [TBD from test]
+- Winning qualification structure: [TBD from test]
+- Budget allocation: [% to each channel based on test performance]
+- Creative strategy: Top 3 performing messages + 2-week refresh cadence
+- Fraud thresholds: Auto-pause at 7% rate or $75K daily losses
+
+*Stakeholder Alignment:*
+- Present findings to exec team
+- Get final budget approval for $13.5M (remaining 90%)
+- Align on launch timeline and monitoring cadence
+
+**Phase 4: National Launch & Monitoring (Weeks 11-20)**
+
+*Objective:* Scale winning approach nationally while optimizing in real-time
+
+*Launch Strategy:*
+- Day 1: 25% budget deployment (cautious scale)
+- Day 3: First performance check, fraud review
+- Day 7: Increase to 50% budget if metrics stable
+- Day 14: Full 100% budget if performance sustained
+
+*Real-Time Optimization:*
+- Daily monitoring: CAC, fraud rate, qualification rate by channel
+- Weekly budget reallocation: Shift $$$ from underperformers to winners
+- Bi-weekly creative refresh: New assets every 2 weeks to combat fatigue
+- Monthly deep-dives: Cohort analysis, LTV modeling, retention curves
+
+*Channel Experiments:*
+- Add new channels: Podcasts, influencer partnerships, PR push
+- Test channel tactics: TikTok creator collabs, Reddit AMAs, affiliate partnerships
+- Geographic expansion: Test international markets (Canada, UK)
+
+*Lifecycle Activation:*
+- Deploy email/SMS nurture sequences based on qualification status
+- Launch in-app progress tracker: "You're $200 away from $350!"
+- Retarget incomplete qualifications with display ads
+- Test "Last Chance" urgency messaging for users near deadline
+
+*Risk Management:*
+- Fraud monitoring: Daily reviews, auto-pause triggers active
+- Legal compliance: Monitor for complaints, regulatory inquiries
+- Budget pacing: Track spend vs. plan, adjust if needed
+- Quality checks: Monitor qualification rate, retention, LTV weekly
+
+**Phase 5: Analysis & Iteration (Weeks 21-24)**
+
+*Objective:* Learn from campaign performance and optimize for future
+
+*Deep-Dive Analysis:*
+- Cohort LTV tracking: 30-day, 60-day, 90-day, 6-month, 12-month
+- Channel attribution: Multi-touch attribution, incrementality testing
+- User quality: Compare qualified vs. non-qualified cohorts
+- Fraud post-mortem: Final losses, patterns missed, system improvements
+- Creative insights: What messaging resonated most? Why?
+- Budget efficiency: ROAS by channel, optimal allocation
+
+*Key Learnings to Document:*
+- What incentive amount hit sweet spot of volume vs. cost?
+- What qualifying structure balanced acquisition and quality?
+- Which channels drove best users at scale?
+- How effective were fraud systems? What would we change?
+- What creative messages performed best? What failed?
+- What lifecycle tactics improved qualification rates?
+- What would we do differently next time?
+
+*Executive Presentation:*
+- Results summary: Volume impact, CAC, LTV, fraud rate, ROI
+- Learnings documented: What worked, what didn't, why
+- Recommendations: Should we run again? What changes?
+- Playbook creation: Document for future high-value offers
+
+*Post-Campaign Actions:*
+- Survey users: Why did they sign up? Would they have without offer?
+- Analyze long-term retention: Do bonus users stick around?
+- Calculate true incrementality: Would they have signed up anyway?
+- Build automated reporting: Dashboard for future campaigns`,
     metrics: [
-      { label: "New Account Signups", value: "+285%", change: "vs. baseline" },
-      { label: "Blended CAC", value: "$142", change: "vs. $180 baseline" },
-      { label: "Qualification Rate", value: "69%", change: "vs. 55% projected" },
-      { label: "Fraud Rate", value: "3.2%", change: "Within 5% threshold" },
-      { label: "6-Month LTV", value: "$487", change: "3.4x CAC payback" },
-      { label: "Direct Deposit Adoption", value: "74%", change: "of qualified users" },
+      { label: "Testing Budget", value: "$1.5M", change: "Weeks 5-8" },
+      { label: "Scale Budget", value: "$13.5M", change: "Weeks 11-20" },
+      { label: "Markets Tested", value: "5 states", change: "Soft launch" },
+      { label: "Experiments Planned", value: "25+", change: "Across all phases" },
+      { label: "Decision Timeline", value: "8 weeks", change: "Test to scale" },
+      { label: "Success Threshold", value: "LTV:CAC >2.5x", change: "At 12 months" },
     ],
     learnings: [
-      "Premium offers work when qualifying actions ensure user quality—$350 drove volume without sacrificing LTV because direct deposit + spending requirements filtered out bonus hunters",
-      "Fraud prevention must be built upfront, not reactively—spent 25% of pre-launch time on fraud systems; caught 3.2% fraudulent signups that would have cost $1.4M in losses",
-      "Channel performance varies dramatically by offer size—TikTok outperformed Meta for high-value offers; younger audiences more motivated by premium incentives; reallocated 15% budget mid-campaign",
-      "Lifecycle nudges significantly improve qualification rates—users who received progress tracker notifications qualified at 69% vs. 48% without; email/SMS sequences at Days 30/40 recovered 23% of drop-offs",
-      "Creative fatigue accelerates with aggressive offers—performance dropped 18% after Week 3 without refresh; established 2-week creative rotation cadence to maintain efficiency",
-      "Affiliate partnerships scale faster than owned channels—deal sites and finance creators drove 22% of volume at 15% lower CAC; built relationships for future campaigns",
-      "Executive alignment on acceptable fraud rates is critical—pre-agreed 5% fraud threshold with CFO/Risk team prevented mid-campaign conflicts; daily monitoring dashboard built trust",
+      "Test before scaling—10% budget soft launch de-risks the $15M investment and provides data to optimize the remaining 90%; jumping straight to national could waste millions on unproven assumptions",
+      "Define clear go/no-go criteria upfront—without pre-agreed success metrics (CAC, fraud rate, qualification rate), you'll face endless debates on whether to scale; alignment prevents analysis paralysis",
+      "Fraud prevention is non-negotiable—building detection systems pre-launch vs. reactively saves millions; 5% fraud rate on $15M campaign = $750K in losses that could have been prevented",
+      "Optimize for quality, not just volume—high signup numbers mean nothing if users don't qualify or churn immediately; qualification rate and 90-day retention predict long-term LTV better than signups",
+      "Channel economics vary by incentive size—a $350 offer might perform differently than $100 across channels; younger audiences (TikTok) may respond better to premium incentives than older demos (Meta)",
+      "Creative fatigue happens faster with aggressive offers—performance typically drops 15-20% after 2-3 weeks without refresh; plan creative rotation from day one, not after performance tanks",
+      "Lifecycle activation is where you win—getting users to sign up is only half the battle; 30-40% might not qualify without nudges; progress trackers, email sequences, and SMS reminders can recover drop-offs and improve unit economics",
+      "Strategic patience pays off—rushing to scale without learning phase would risk blowing the entire budget on suboptimal configuration; 4-week test investment yields data that improves the remaining 16 weeks",
     ],
-    tags: ["Growth", "Fintech", "Acquisition", "Performance Marketing", "Fraud Prevention", "Lifecycle Marketing", "Multi-Channel", "Incentive Campaigns", "User Activation"],
+    tags: ["Growth Strategy", "Experimentation", "Fintech", "Performance Marketing", "Fraud Prevention", "A/B Testing", "Acquisition", "Unit Economics", "Strategic Planning", "Risk Management"],
   },
   {
     id: "b2b-saas-analytics",
