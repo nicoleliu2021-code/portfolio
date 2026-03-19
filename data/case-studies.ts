@@ -120,7 +120,7 @@ export const caseStudies: CaseStudy[] = [
     role: "Growth Product Marketing Manager",
     duration: "Q1 2025 (4 months)",
     category: "Growth",
-    thumbnail: "/images/upstart.jpg",
+    thumbnail: "/images/chime-cash-offer.webp",
     problem: "Chime needed to accelerate new account growth in a competitive neobank market where customer acquisition costs (CAC) were rising 20% YoY. Traditional $50-100 signup bonuses were no longer differentiating us from competitors (Current, Varo, Dave). Customer research revealed that while our product was competitive, users needed a stronger incentive to overcome switching friction from incumbent banks.",
     opportunity: "Launch aggressive $350 cash offer campaign to drive step-change in acquisition volume while maintaining unit economics. Opportunity to test premium incentive tier, build fraud prevention systems, optimize multi-channel performance marketing, and establish playbook for future high-value offer campaigns.",
     hypothesis: "A $350 cash offer (3.5x typical signup bonus) would drive 250%+ lift in account signups by creating viral word-of-mouth and paid channel efficiency gains, while qualifying requirements (direct deposit + spending threshold) would ensure user quality and offset promotional costs through interchange revenue within 6 months.",
