@@ -114,6 +114,106 @@ export const caseStudies: CaseStudy[] = [
     tags: ["Growth", "Acquisition", "Marketing", "Fintech", "Data-Driven"],
   },
   {
+    id: "chime-cash-offer",
+    title: "$350 Cash Offer Campaign: Fintech Acquisition at Scale",
+    company: "Chime (Hypothetical Case Study)",
+    role: "Growth Product Marketing Manager",
+    duration: "Q1 2025 (4 months)",
+    category: "Growth",
+    thumbnail: "/images/upstart.jpg",
+    problem: "Chime needed to accelerate new account growth in a competitive neobank market where customer acquisition costs (CAC) were rising 20% YoY. Traditional $50-100 signup bonuses were no longer differentiating us from competitors (Current, Varo, Dave). Customer research revealed that while our product was competitive, users needed a stronger incentive to overcome switching friction from incumbent banks.",
+    opportunity: "Launch aggressive $350 cash offer campaign to drive step-change in acquisition volume while maintaining unit economics. Opportunity to test premium incentive tier, build fraud prevention systems, optimize multi-channel performance marketing, and establish playbook for future high-value offer campaigns.",
+    hypothesis: "A $350 cash offer (3.5x typical signup bonus) would drive 250%+ lift in account signups by creating viral word-of-mouth and paid channel efficiency gains, while qualifying requirements (direct deposit + spending threshold) would ensure user quality and offset promotional costs through interchange revenue within 6 months.",
+    strategy: `**Offer Structure & Qualifying Actions:**
+- $350 bonus for new customers who complete:
+  - Account signup + verification (KYC)
+  - Direct deposit of $200+ within 45 days
+  - 10+ debit card purchases within 60 days
+- Designed to attract primary account switchers, not bonus hunters
+- 60-day qualification window to encourage habit formation
+
+**Fraud Prevention & Risk Management:**
+- Cross-functional collaboration with Fraud, Compliance, Legal teams
+- Multi-layer fraud detection: device fingerprinting, velocity checks, synthetic ID detection
+- Bonus clawback mechanisms for suspicious patterns
+- Real-time monitoring dashboard for anomaly detection
+- Daily fraud rate review with auto-pause triggers at 5% threshold
+
+**Channel Strategy & Budget Allocation:**
+- Reallocated $12M from baseline CAC budget into high-intent channels
+- Paid Social (45%): Meta, TikTok with lookalike audiences
+- Paid Search (25%): Branded + competitor keywords
+- Affiliate/Influencer (15%): Personal finance creators, deal sites
+- Organic/Viral (10%): Referral program integration, PR push
+- Display/Retargeting (5%): Awareness layer
+
+**Creative & Messaging Testing:**
+- Tested messaging angles: "Get $350" vs "Earn $350" vs "Claim $350"
+- A/B tested value framing: dollar amount vs percentage APY equivalent
+- Optimized for different audiences: students, gig workers, paycheck-to-paycheck
+- Built creative refresh cadence (new assets every 2 weeks) to combat fatigue
+
+**Lifecycle & Activation Optimization:**
+- Email nurture sequences for incomplete qualifications
+- Push notifications for deposit/spend milestones
+- In-app progress trackers showing "$150 away from bonus!"
+- SMS reminders at Days 30, 40 for pending qualifications`,
+    execution: `**Phase 1: Pre-Launch Planning & Legal Review (Weeks 1-3)**
+- Secured Legal/Compliance approval for promotional terms across 50 states
+- Built fraud risk models using historical promo abuse patterns
+- Designed qualification logic and edge case handling
+- Created multi-variant landing pages for A/B testing
+- Aligned cross-functional teams: Product, Engineering, Marketing, Finance, Risk
+
+**Phase 2: Soft Launch & Testing (Week 4-5)**
+- Soft launched in 5 test markets (10% of budget)
+- Tested 8 creative variants across Meta/TikTok
+- Validated fraud detection systems with real traffic
+- Identified winner creative: "Get $350 when you make Chime your primary bank"
+- Confirmed CAC target achievable: $145 blended (vs $180 baseline)
+- Fraud rate at 2.8% (below 5% threshold)
+
+**Phase 3: National Scale & Optimization (Week 6-10)**
+- Scaled to 100% national launch across all channels
+- Ran 20+ landing page experiments (headline, CTA, trust signals)
+- Implemented dynamic budget reallocation: shifted 15% from underperforming Display to Meta
+- Launched affiliate partnerships with NerdWallet, Credit Karma, TikTok finance creators
+- Built real-time dashboard tracking: signups, qualifications, fraud rate, CAC by channel
+- Introduced "Tell a Friend" bonus stacking: $50 referral bonus on top of $350
+
+**Phase 4: Lifecycle Activation & Conversion (Week 11-16)**
+- Sent personalized email/SMS sequences based on qualification status
+- Implemented in-app progress tracker: "You're $200 away from your $350 bonus!"
+- Retargeted incomplete qualifications with display ads
+- Reduced qualification drop-off from 42% to 31% through nudges
+- Launched "Last Chance" email campaign for users at Day 50/60
+
+**Phase 5: Analysis & Iteration (Month 4)**
+- Deep-dive cohort analysis on qualified vs. non-qualified users
+- LTV modeling to validate payback period assumptions
+- Post-campaign survey to understand user motivations
+- Documented learnings for future high-value offer campaigns
+- Presented results to executive team with recommendations`,
+    metrics: [
+      { label: "New Account Signups", value: "+285%", change: "vs. baseline" },
+      { label: "Blended CAC", value: "$142", change: "vs. $180 baseline" },
+      { label: "Qualification Rate", value: "69%", change: "vs. 55% projected" },
+      { label: "Fraud Rate", value: "3.2%", change: "Within 5% threshold" },
+      { label: "6-Month LTV", value: "$487", change: "3.4x CAC payback" },
+      { label: "Direct Deposit Adoption", value: "74%", change: "of qualified users" },
+    ],
+    learnings: [
+      "Premium offers work when qualifying actions ensure user quality—$350 drove volume without sacrificing LTV because direct deposit + spending requirements filtered out bonus hunters",
+      "Fraud prevention must be built upfront, not reactively—spent 25% of pre-launch time on fraud systems; caught 3.2% fraudulent signups that would have cost $1.4M in losses",
+      "Channel performance varies dramatically by offer size—TikTok outperformed Meta for high-value offers; younger audiences more motivated by premium incentives; reallocated 15% budget mid-campaign",
+      "Lifecycle nudges significantly improve qualification rates—users who received progress tracker notifications qualified at 69% vs. 48% without; email/SMS sequences at Days 30/40 recovered 23% of drop-offs",
+      "Creative fatigue accelerates with aggressive offers—performance dropped 18% after Week 3 without refresh; established 2-week creative rotation cadence to maintain efficiency",
+      "Affiliate partnerships scale faster than owned channels—deal sites and finance creators drove 22% of volume at 15% lower CAC; built relationships for future campaigns",
+      "Executive alignment on acceptable fraud rates is critical—pre-agreed 5% fraud threshold with CFO/Risk team prevented mid-campaign conflicts; daily monitoring dashboard built trust",
+    ],
+    tags: ["Growth", "Fintech", "Acquisition", "Performance Marketing", "Fraud Prevention", "Lifecycle Marketing", "Multi-Channel", "Incentive Campaigns", "User Activation"],
+  },
+  {
     id: "b2b-saas-analytics",
     title: "Product Analytics Foundation: B2B SaaS Activation",
     company: "Early-Stage SaaS Startup",
