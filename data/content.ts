@@ -71,16 +71,16 @@ export const buildLog: BuildLogEntry[] = [
 export const workExperience: WorkExperience[] = [
   {
     company: "Independent Product Development",
-    role: "Builder / Founder",
+    role: "Builder (Side Projects)",
     duration: "2026 - Present",
-    description: "Expanded from PM and growth work into hands-on product building. Launched multiple AI-powered applications using modern development workflows, practiced rapid MVP shipping, and strengthened technical product capabilities through end-to-end execution.",
+    description: "Building AI-powered products to strengthen technical PM capabilities and explore emerging AI/ML opportunities. Focus on rapid prototyping, AI product development, and end-to-end execution.",
     achievements: [
-      "Built and shipped 3 production web applications: AI resume optimizer, tutor marketplace MVP, and PM portfolio platform",
-      "Implemented AI-assisted development workflows using Claude Code, Vercel, and GitHub for rapid prototyping and deployment",
-      "Designed end-to-end product experiences including UX flows, feature prioritization, and go-to-market positioning",
-      "Shipped MVPs in 2-4 week cycles, practicing product discovery through iteration and user feedback",
-      "Developed AI resume customization system that parses job descriptions and tailors content using GPT-4 API",
-      "Built marketplace prototype with real-time messaging, payment integration (Stripe), and two-sided user flows",
+      "Built and launched production AI resume optimizer SaaS using GPT-4 API, reaching 500+ users with 12% free-to-paid conversion",
+      "Shipped 3 full-stack applications using modern AI-assisted development workflows (Claude Code, Cursor, GitHub Copilot)",
+      "Developed AI product features including semantic analysis, prompt engineering, and context management for LLM applications",
+      "Designed and implemented AI UX patterns: streaming responses, progressive disclosure, and AI explainability",
+      "Built end-to-end product experiences from 0→1: discovery, design, development, deployment, and iteration",
+      "Practiced AI product thinking: defining success metrics, evaluation frameworks, and quality guardrails for LLM outputs",
     ],
   },
   {

@@ -333,7 +333,7 @@ ${result.recommendedCaseStudies.join(', ')}
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-      {/* Production Callout Banner */}
+      {/* Product Info Banner */}
       <div className="max-w-5xl mx-auto mb-8">
         <div className="bg-gradient-to-r from-blue-50 to-purple-50 border-2 border-blue-200 rounded-2xl p-6">
           <div className="flex items-start gap-4">
@@ -344,19 +344,19 @@ ${result.recommendedCaseStudies.join(', ')}
             </div>
             <div className="flex-1">
               <h3 className="text-lg font-bold text-gray-900 mb-2">
-                📌 This is a simplified portfolio demo
+                Experience AI-Powered Resume Optimization
               </h3>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                The production <strong>ResumeFit SaaS</strong> includes GPT-4 semantic analysis,
-                PDF/DOCX resume parsing, 6 professional templates, inline AI editing,
-                and a freemium model with 500+ users and 12% conversion rate.
+                This interactive demo shows how the algorithm works. The full <strong>ResumeFit platform</strong> includes
+                GPT-4 semantic analysis, PDF/DOCX parsing, 6 professional templates, inline AI editing,
+                and serves 500+ users with a 12% free-to-paid conversion rate.
               </p>
               <div className="flex flex-wrap gap-3">
                 <a
-                  href="/work/resumefit-saas"
+                  href="/ai-resume-optimizer"
                   className="inline-flex items-center gap-2 px-4 py-2 bg-gray-900 text-white rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors"
                 >
-                  View Full Case Study
+                  Read Full Case Study
                   <ArrowRight className="h-4 w-4" />
                 </a>
                 <a
@@ -365,7 +365,7 @@ ${result.recommendedCaseStudies.join(', ')}
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-4 py-2 bg-white border-2 border-gray-300 text-gray-900 rounded-lg text-sm font-medium hover:border-gray-400 transition-colors"
                 >
-                  Try Production Version
+                  Try Full Product
                   <ArrowRight className="h-4 w-4" />
                 </a>
               </div>
@@ -848,15 +848,21 @@ Example: 'We're looking for a Product Manager with experience in A/B testing, gr
         )}
       </div>
 
-      {/* About This Tool */}
+      {/* How It Works */}
       {step === 'input' && (
         <div className="max-w-3xl mx-auto mt-16 bg-white border border-gray-200 rounded-xl p-8">
           <div className="flex items-start gap-4">
             <AlertCircle className="h-6 w-6 text-blue-600 flex-shrink-0 mt-1" />
             <div>
-              <h3 className="font-bold text-gray-900 mb-2">About This Tool</h3>
+              <h3 className="font-bold text-gray-900 mb-2">How This Demo Works</h3>
+              <p className="text-sm text-gray-700 leading-relaxed mb-4">
+                This interactive demo uses keyword matching and pattern recognition to analyze job descriptions and generate
+                tailored resume content. It showcases the core algorithm using my actual experience at Rocket Mortgage, Upstart,
+                and builder projects.
+              </p>
               <p className="text-sm text-gray-700 leading-relaxed">
-                This is a portfolio demonstration of AI-powered resume tailoring. The current version uses keyword matching and templates to generate tailored content based on my actual experience at Rocket Mortgage, Upstart, and personal projects. A production version would integrate GPT-4 or Claude for more sophisticated natural language analysis and personalization.
+                The production ResumeFit platform adds GPT-4 semantic analysis, PDF/DOCX parsing, custom templates, and advanced
+                personalization. <a href="/ai-resume-optimizer" className="text-purple-600 hover:text-purple-700 font-medium underline">Learn more about the full product →</a>
               </p>
             </div>
           </div>

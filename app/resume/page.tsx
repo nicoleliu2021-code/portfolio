@@ -21,7 +21,7 @@ export default function ResumePage() {
                 Xuejing Liu
               </h1>
               <p className="text-xl text-gray-600">
-                Product Manager | Growth | Builder
+                AI Product Manager | Growth | Builder
               </p>
               <div className="flex items-center gap-4 mt-4 text-sm text-gray-600">
                 <span>linkedin.com/in/xuejingliu</span>
@@ -42,11 +42,12 @@ export default function ResumePage() {
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Professional Summary</h2>
           <p className="text-gray-700 leading-relaxed">
-            Product Manager with 4+ years of experience driving measurable business impact
-            across fintech, growth, and AI. Proven track record of launching data-driven
-            products, running rigorous experiments, and building from scratch. Generated
-            $4.2M+ in annual revenue through strategic product initiatives. Strong technical
-            foundation with hands-on building experience (Next.js, React, AI APIs).
+            Product Manager with 4+ years of experience building AI-powered products and driving
+            measurable growth across fintech and SaaS. Launched production AI applications using
+            GPT-4, Claude, and modern LLM APIs. Proven track record of experimentation, data-driven
+            product development, and 0→1 execution. Generated $4.2M+ in annual revenue through
+            strategic product initiatives. Strong technical foundation with hands-on AI product
+            development experience (prompt engineering, LLM UX design, full-stack development).
           </p>
         </section>
 
@@ -166,16 +167,18 @@ export default function ResumePage() {
             </div>
 
             <div>
-              <h3 className="font-bold text-gray-900 mb-3">Technical</h3>
+              <h3 className="font-bold text-gray-900 mb-3">AI Product & Technical</h3>
               <div className="flex flex-wrap gap-2">
                 {[
-                  "Next.js",
-                  "React",
-                  "TypeScript",
-                  "APIs",
-                  "AI/LLMs",
-                  "System Design",
-                  "Git",
+                  "GPT-4 / Claude",
+                  "Prompt Engineering",
+                  "LLM Product Design",
+                  "AI UX Patterns",
+                  "OpenAI API",
+                  "Vector Databases",
+                  "Next.js / React",
+                  "Python",
+                  "API Design",
                   "Technical PM",
                 ].map((skill) => (
                   <span
@@ -189,7 +192,32 @@ export default function ResumePage() {
             </div>
 
             <div>
-              <h3 className="font-bold text-gray-900 mb-3">Tools & Platforms</h3>
+              <h3 className="font-bold text-gray-900 mb-3">AI & Development Tools</h3>
+              <div className="flex flex-wrap gap-2">
+                {[
+                  "Claude Code",
+                  "Cursor",
+                  "GitHub Copilot",
+                  "ChatGPT",
+                  "Anthropic API",
+                  "OpenAI API",
+                  "Vercel AI SDK",
+                  "LangChain",
+                  "Postman",
+                  "Git / GitHub",
+                ].map((skill) => (
+                  <span
+                    key={skill}
+                    className="px-3 py-1 rounded-full bg-gray-100 text-gray-700 text-sm"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <h3 className="font-bold text-gray-900 mb-3">Product & Analytics Tools</h3>
               <div className="flex flex-wrap gap-2">
                 {[
                   "Jira",
@@ -199,7 +227,7 @@ export default function ResumePage() {
                   "Mixpanel",
                   "Optimizely",
                   "Notion",
-                  "Slack",
+                  "SQL",
                 ].map((skill) => (
                   <span
                     key={skill}
