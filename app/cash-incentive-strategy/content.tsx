@@ -17,6 +17,10 @@ import {
   Filter,
   Repeat,
   Activity,
+  Quote,
+  TrendingDown,
+  Percent,
+  Clock,
 } from "lucide-react";
 
 export default function CashIncentiveContent() {
@@ -312,97 +316,161 @@ export default function CashIncentiveContent() {
         </div>
       </div>
 
-      {/* Business Context */}
+      {/* Business Context - Redesigned */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8 text-center">Business Context</h2>
-        <div className="prose prose-lg text-gray-700 max-w-4xl mx-auto space-y-6">
-          <p>
-            In consumer banking and fintech, switching behavior is one of the hardest actions to drive. Users are
-            reluctant to change direct deposit or primary banking habits due to perceived setup complexity, risk
-            aversion, and inertia.
-          </p>
-          <p>
-            Cash incentives can accelerate acquisition, but poorly designed offers attract low-quality users who
-            churn immediately after payout—destroying unit economics and wasting marketing spend.
-          </p>
-          <p>
-            The strategic challenge is to balance aggressive growth with long-term retention quality and sustainable
-            CAC. Success requires designing incentives that drive valuable behavior change, not just transactional signups.
-          </p>
-        </div>
-      </div>
-
-      {/* Problem */}
-      <div className="bg-white border-y border-gray-200">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8 text-center">The Problem</h2>
-          <div className="grid lg:grid-cols-2 gap-8">
-            <div className="bg-red-50 border-l-4 border-red-400 p-6 rounded-r-lg">
-              <h3 className="font-bold text-gray-900 mb-4">Switching Friction</h3>
-              <ul className="space-y-2 text-gray-700">
-                <li className="flex items-start gap-2">
-                  <span className="text-red-500 mt-1">•</span>
-                  <span>Users hesitate because setup effort feels high and risky</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-red-500 mt-1">•</span>
-                  <span>Direct deposit changes require employer coordination</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-red-500 mt-1">•</span>
-                  <span>Psychological resistance to changing primary financial relationships</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-orange-50 border-l-4 border-orange-400 p-6 rounded-r-lg">
-              <h3 className="font-bold text-gray-900 mb-4">Economics Risk</h3>
-              <ul className="space-y-2 text-gray-700">
-                <li className="flex items-start gap-2">
-                  <span className="text-orange-500 mt-1">•</span>
-                  <span>Generic offers drive signups but not meaningful activation</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-orange-500 mt-1">•</span>
-                  <span>High risk of bonus hunters who churn immediately after payout</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-orange-500 mt-1">•</span>
-                  <span>Fraud and abuse can destroy program ROI without proper guardrails</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="mt-8 bg-gray-100 border-l-4 border-gray-400 p-6 rounded-r-lg max-w-4xl mx-auto">
-            <p className="text-gray-800 leading-relaxed">
-              <strong>Core Challenge:</strong> How do we design an incentive program that drives high-quality acquisition
-              and activation while maintaining efficient unit economics and protecting against abuse?
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">The Challenge</h2>
+            <p className="text-xl text-gray-700 leading-relaxed mb-6">
+              In consumer banking, switching behavior is one of the hardest actions to drive. Despite aggressive marketing, most users never change their primary bank.
+            </p>
+            <p className="text-gray-700 leading-relaxed mb-6">
+              The friction is real: updating direct deposit, moving automatic payments, overcoming inertia. Cash incentives can break through—but only if designed correctly.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              The wrong approach attracts bonus hunters who churn after payout, destroying unit economics. The right approach drives genuine switching and creates lasting customer relationships.
             </p>
           </div>
+
+          <div className="space-y-4">
+            <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-xl">
+              <div className="flex items-start gap-3">
+                <TrendingDown className="h-6 w-6 text-red-600 flex-shrink-0 mt-1" />
+                <div>
+                  <div className="text-3xl font-bold text-red-600 mb-1">73%</div>
+                  <div className="text-sm text-gray-700">of users never switch primary banks despite dissatisfaction</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-orange-50 border-l-4 border-orange-500 p-6 rounded-r-xl">
+              <div className="flex items-start gap-3">
+                <DollarSign className="h-6 w-6 text-orange-600 flex-shrink-0 mt-1" />
+                <div>
+                  <div className="text-3xl font-bold text-orange-600 mb-1">$150-300</div>
+                  <div className="text-sm text-gray-700">typical CAC for fintech acquisition campaigns</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-r-xl">
+              <div className="flex items-start gap-3">
+                <Percent className="h-6 w-6 text-yellow-600 flex-shrink-0 mt-1" />
+                <div>
+                  <div className="text-3xl font-bold text-yellow-600 mb-1">40-60%</div>
+                  <div className="text-sm text-gray-700">of sign-ups never complete direct deposit setup</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* Core Insight */}
-      <div className="bg-gradient-to-br from-blue-600 to-green-600 text-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="flex items-start gap-6">
-            <Lightbulb className="h-12 w-12 flex-shrink-0" />
-            <div>
-              <h2 className="text-3xl font-bold mb-4">Core Insight</h2>
-              <p className="text-2xl font-semibold mb-4 leading-relaxed">
-                Cash incentives are not just promotional hooks — they are behavior-change levers.
-              </p>
-              <div className="prose prose-lg text-blue-50 space-y-3">
-                <p>
-                  The real value is not the signup itself. The key behavior is direct deposit setup and recurring usage—
-                  actions that predict long-term customer value.
-                </p>
-                <p>
-                  Incentives should reward actions that signal commitment, not just attention. The program must be designed
-                  around behavior shaping, not acquisition volume alone.
+      {/* Problem - Story Format */}
+      <div className="bg-gradient-to-br from-gray-50 to-blue-50 border-y border-gray-200">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">The problem most fintechs face</h2>
+
+            {/* Scenario */}
+            <div className="bg-white rounded-2xl p-8 shadow-sm mb-8">
+              <div className="flex items-start gap-4 mb-6">
+                <Quote className="h-8 w-8 text-blue-600 flex-shrink-0" />
+                <p className="text-xl text-gray-800 italic leading-relaxed">
+                  "We're spending $200 per signup. Half never set up direct deposit. Of those who do, 40% churn within 90 days. Our LTV/CAC is underwater."
                 </p>
               </div>
+              <div className="text-sm text-gray-600 border-t pt-4">
+                — Scenario facing many growth teams in consumer fintech
+              </div>
+            </div>
+
+            {/* The core tensions */}
+            <div className="space-y-6 mb-8">
+              <div className="flex items-start gap-4">
+                <div className="h-12 w-12 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0">
+                  <AlertTriangle className="h-6 w-6 text-red-600" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">Switching friction is high</h3>
+                  <p className="text-gray-700">Users resist changing direct deposit. It requires employer coordination, feels risky, and breaks comfortable routines. The default is inertia.</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="h-12 w-12 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0">
+                  <Users className="h-6 w-6 text-orange-600" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">Incentives attract the wrong users</h3>
+                  <p className="text-gray-700">Generic "$200 bonus" offers drive volume but pull in bonus hunters—users who game the system, grab cash, and churn immediately.</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="h-12 w-12 rounded-full bg-yellow-100 flex items-center justify-center flex-shrink-0">
+                  <TrendingDown className="h-6 w-6 text-yellow-600" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">Unit economics break</h3>
+                  <p className="text-gray-700">When CAC is $250 but 60% of users never activate or churn within 3 months, payback periods extend to 18+ months—or never arrive at all.</p>
+                </div>
+              </div>
+            </div>
+
+            {/* The strategic question */}
+            <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white">
+              <h3 className="text-2xl font-bold mb-3">The Strategic Question</h3>
+              <p className="text-lg text-blue-100 leading-relaxed">
+                How do we design an incentive program that drives genuine behavior change—activating high-quality users while protecting unit economics and minimizing abuse?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Core Insight - Visual Break */}
+      <div className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '48px 48px' }}></div>
+        </div>
+
+        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 text-center">
+          <div className="inline-block p-3 rounded-2xl bg-white/10 backdrop-blur-sm mb-6">
+            <Lightbulb className="h-10 w-10 text-yellow-300" />
+          </div>
+
+          <h2 className="text-2xl font-bold text-blue-200 mb-6 tracking-wide uppercase text-sm">Core Insight</h2>
+
+          <p className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-8 leading-tight">
+            Cash incentives aren't promotional hooks—
+            <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-300">
+              they're behavior-change levers
+            </span>
+          </p>
+
+          <div className="max-w-3xl mx-auto space-y-6 text-lg text-blue-100">
+            <p className="leading-relaxed">
+              The signup means nothing. What matters is <strong className="text-white">direct deposit setup</strong> and <strong className="text-white">recurring usage</strong>—the behaviors that predict long-term value.
+            </p>
+            <p className="leading-relaxed">
+              Great incentive programs reward commitment, not attention. They're designed around <strong className="text-white">behavior shaping</strong>, not just acquisition volume.
+            </p>
+          </div>
+
+          <div className="mt-12 grid sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+              <div className="text-3xl font-bold text-white mb-2">Wrong</div>
+              <div className="text-sm text-blue-200">"Get 10,000 signups"</div>
+            </div>
+            <div className="bg-gradient-to-br from-green-500/20 to-blue-500/20 backdrop-blur-sm rounded-xl p-6 border-2 border-green-400">
+              <div className="text-3xl font-bold text-green-300 mb-2">Right</div>
+              <div className="text-sm text-green-200">"Get 3,000 activated users"</div>
+            </div>
+            <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-sm rounded-xl p-6 border-2 border-purple-400">
+              <div className="text-3xl font-bold text-purple-300 mb-2">Better</div>
+              <div className="text-sm text-purple-200">"Get 2,000 retained users"</div>
             </div>
           </div>
         </div>
@@ -466,92 +534,312 @@ export default function CashIncentiveContent() {
         </div>
       </div>
 
-      {/* Audience Segmentation */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 text-center">Audience Segmentation</h2>
-        <p className="text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto">
-          Different user mindsets require different incentive strategies and messaging approaches
-        </p>
-
-        <div className="grid md:grid-cols-2 gap-6">
-          {audiences.map((audience, idx) => (
-            <motion.div
-              key={audience.name}
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: idx * 0.1 }}
-              className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-blue-300 hover:shadow-lg transition-all"
-            >
-              <h3 className="text-xl font-bold text-gray-900 mb-4">{audience.name}</h3>
-              <div className="space-y-3 text-sm">
-                <div>
-                  <span className="font-semibold text-gray-900">Mindset:</span>
-                  <span className="text-gray-700 ml-2">{audience.mindset}</span>
-                </div>
-                <div>
-                  <span className="font-semibold text-gray-900">Opportunity:</span>
-                  <span className="text-gray-700 ml-2">{audience.opportunity}</span>
-                </div>
-                <div>
-                  <span className="font-semibold text-gray-900">Messaging:</span>
-                  <span className="text-gray-700 ml-2">{audience.messaging}</span>
-                </div>
-                <div className="pt-2 border-t border-gray-200">
-                  <span className="font-semibold text-blue-600">Strategy:</span>
-                  <span className="text-gray-700 ml-2">{audience.strategy}</span>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-
-      {/* Offer Design Framework */}
-      <div className="bg-white border-y border-gray-200">
+      {/* Audience Segmentation - Persona Format */}
+      <div className="bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 text-center">
-            Offer Design Framework
-          </h2>
-          <p className="text-xl text-gray-600 text-center mb-8 max-w-3xl mx-auto">
-            Test systematically across multiple dimensions to find optimal configuration
-          </p>
-
-          <div className="bg-green-50 border-2 border-green-200 rounded-xl p-6 mb-8 max-w-2xl mx-auto">
-            <h3 className="font-bold text-gray-900 mb-2">Example Offer:</h3>
-            <p className="text-lg text-gray-800">
-              "Get <strong>$200</strong> when you set up direct deposit of <strong>$500+</strong> within{" "}
-              <strong>45 days</strong>"
+          <div className="max-w-4xl mx-auto mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Not all users are equal</h2>
+            <p className="text-xl text-gray-600">
+              Each segment requires a different approach. Blanket offers waste money. Targeted strategies win.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            {offerVariables.map((variable, idx) => (
-              <div key={variable.dimension} className="bg-gray-50 border border-gray-200 rounded-xl p-6">
-                <h3 className="text-lg font-bold text-gray-900 mb-3">{variable.dimension}</h3>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {variable.options.map((option) => (
-                    <span
-                      key={option}
-                      className="px-3 py-1 bg-white border border-gray-300 rounded-lg text-sm font-medium text-gray-700"
-                    >
-                      {option}
-                    </span>
-                  ))}
+          <div className="space-y-6">
+            {/* High-Intent Switchers */}
+            <div className="bg-white border-2 border-green-200 rounded-2xl overflow-hidden">
+              <div className="bg-gradient-to-r from-green-50 to-blue-50 p-6 border-b-2 border-green-200">
+                <div className="flex items-start justify-between">
+                  <div>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-2">High-Intent Switchers</h3>
+                    <p className="text-gray-700">Already searching for better banking options</p>
+                  </div>
+                  <div className="text-right">
+                    <div className="text-sm text-gray-600">Segment size</div>
+                    <div className="text-2xl font-bold text-green-600">~20%</div>
+                  </div>
                 </div>
-                <p className="text-sm text-gray-700 leading-relaxed">
-                  <strong>Tradeoff:</strong> {variable.tradeoff}
+              </div>
+              <div className="grid md:grid-cols-3 gap-6 p-6">
+                <div>
+                  <div className="text-sm font-bold text-gray-600 uppercase mb-2">Mindset</div>
+                  <p className="text-gray-800">Frustrated with current bank. Actively comparing alternatives. Ready to switch.</p>
+                </div>
+                <div>
+                  <div className="text-sm font-bold text-gray-600 uppercase mb-2">Strategy</div>
+                  <p className="text-gray-800">Moderate incentive ($100-150). Focus messaging on <strong>trust, speed, ease</strong>. Lead with product benefits.</p>
+                </div>
+                <div>
+                  <div className="text-sm font-bold text-gray-600 uppercase mb-2">Expected Behavior</div>
+                  <p className="text-gray-800">High activation rate (60-70%). Strong retention. Lower abuse risk. Best LTV/CAC.</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Incentive Seekers */}
+            <div className="bg-white border-2 border-orange-200 rounded-2xl overflow-hidden">
+              <div className="bg-gradient-to-r from-orange-50 to-red-50 p-6 border-b-2 border-orange-200">
+                <div className="flex items-start justify-between">
+                  <div>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-2">Incentive Seekers</h3>
+                    <p className="text-gray-700">Motivated primarily by bonus offers</p>
+                  </div>
+                  <div className="text-right">
+                    <div className="text-sm text-gray-600">Segment size</div>
+                    <div className="text-2xl font-bold text-orange-600">~35%</div>
+                  </div>
+                </div>
+              </div>
+              <div className="grid md:grid-cols-3 gap-6 p-6">
+                <div>
+                  <div className="text-sm font-bold text-gray-600 uppercase mb-2">Mindset</div>
+                  <p className="text-gray-800">Hunting for bonuses. Will sign up anywhere offering cash. Limited brand loyalty.</p>
+                </div>
+                <div>
+                  <div className="text-sm font-bold text-gray-600 uppercase mb-2">Strategy</div>
+                  <p className="text-gray-800">Lead with offer but add <strong>strong qualification rules</strong>. Use tiered payouts. Monitor for abuse patterns.</p>
+                </div>
+                <div>
+                  <div className="text-sm font-bold text-gray-600 uppercase mb-2">Expected Behavior</div>
+                  <p className="text-gray-800">Medium activation (40-50%). Higher churn risk. Requires fraud monitoring. Profitable if retention &gt; 60 days.</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Passive Prospects */}
+            <div className="bg-white border-2 border-purple-200 rounded-2xl overflow-hidden">
+              <div className="bg-gradient-to-r from-purple-50 to-pink-50 p-6 border-b-2 border-purple-200">
+                <div className="flex items-start justify-between">
+                  <div>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-2">Passive Prospects</h3>
+                    <p className="text-gray-700">Not actively looking to switch</p>
+                  </div>
+                  <div className="text-right">
+                    <div className="text-sm text-gray-600">Segment size</div>
+                    <div className="text-2xl font-bold text-purple-600">~35%</div>
+                  </div>
+                </div>
+              </div>
+              <div className="grid md:grid-cols-3 gap-6 p-6">
+                <div>
+                  <div className="text-sm font-bold text-gray-600 uppercase mb-2">Mindset</div>
+                  <p className="text-gray-800">Satisfied enough with current bank. Inertia is strong. Needs compelling reason to act.</p>
+                </div>
+                <div>
+                  <div className="text-sm font-bold text-gray-600 uppercase mb-2">Strategy</div>
+                  <p className="text-gray-800">Higher incentive ($200-250). <strong>Emotional/lifestyle creative</strong>. Show transformation story. Simplify switching narrative.</p>
+                </div>
+                <div>
+                  <div className="text-sm font-bold text-gray-600 uppercase mb-2">Expected Behavior</div>
+                  <p className="text-gray-800">Lower activation (30-40%). But if activated, strong retention. Worth the CAC if LTV &gt; $800.</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Unactivated Users */}
+            <div className="bg-white border-2 border-blue-200 rounded-2xl overflow-hidden">
+              <div className="bg-gradient-to-r from-blue-50 to-cyan-50 p-6 border-b-2 border-blue-200">
+                <div className="flex items-start justify-between">
+                  <div>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-2">Unactivated Users</h3>
+                    <p className="text-gray-700">Already signed up but haven't completed setup</p>
+                  </div>
+                  <div className="text-right">
+                    <div className="text-sm text-gray-600">Segment size</div>
+                    <div className="text-2xl font-bold text-blue-600">~10%</div>
+                  </div>
+                </div>
+              </div>
+              <div className="grid md:grid-cols-3 gap-6 p-6">
+                <div>
+                  <div className="text-sm font-bold text-gray-600 uppercase mb-2">Mindset</div>
+                  <p className="text-gray-800">Started journey but got stuck or distracted. May need nudge or clarification.</p>
+                </div>
+                <div>
+                  <div className="text-sm font-bold text-gray-600 uppercase mb-2">Strategy</div>
+                  <p className="text-gray-800"><strong>Reminder + urgency messaging</strong>. Show progress ("You're 80% done"). Offer support. Extend deadline if needed.</p>
+                </div>
+                <div>
+                  <div className="text-sm font-bold text-gray-600 uppercase mb-2">Expected Behavior</div>
+                  <p className="text-gray-800">High recovery potential (50-60%). Low incremental CAC. Strong ROI on lifecycle campaigns.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Key insight callout */}
+          <div className="mt-12 bg-gradient-to-r from-gray-900 to-gray-800 rounded-2xl p-8 text-white">
+            <div className="flex items-start gap-4">
+              <Target className="h-8 w-8 text-blue-400 flex-shrink-0 mt-1" />
+              <div>
+                <h4 className="text-xl font-bold mb-3">Why segmentation matters</h4>
+                <p className="text-gray-300 leading-relaxed">
+                  A $200 blanket offer wastes money on high-intent users who'd convert for $100, while underinvesting in passive prospects who need $250. Segmentation allows dynamic allocation: <strong className="text-white">spend more on high-LTV segments, less on high-risk segments, and optimize recovery for warm leads</strong>.
                 </p>
               </div>
-            ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Offer Design Framework - Interactive Style */}
+      <div className="bg-white border-y border-gray-200">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+              How we'd test the offer
+            </h2>
+            <p className="text-xl text-gray-600 mb-12">
+              Every element is a variable. Each variable changes economics. Test systematically.
+            </p>
+
+            {/* Example Offer - Large Format */}
+            <div className="relative bg-gradient-to-br from-green-50 to-blue-50 border-4 border-green-500 rounded-2xl p-10 mb-12 overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-green-400 rounded-full blur-3xl opacity-20"></div>
+              <div className="absolute bottom-0 left-0 w-32 h-32 bg-blue-400 rounded-full blur-3xl opacity-20"></div>
+
+              <div className="relative">
+                <div className="text-sm font-bold text-green-700 uppercase tracking-wide mb-4">Example Offer Structure</div>
+                <div className="text-3xl font-bold text-gray-900 leading-relaxed">
+                  Get <span className="text-green-600 underline decoration-4 decoration-green-300">$200</span> when you set up direct deposit of{" "}
+                  <span className="text-blue-600 underline decoration-4 decoration-blue-300">$500+</span> within{" "}
+                  <span className="text-purple-600 underline decoration-4 decoration-purple-300">45 days</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Test Variables - Comparison Table Style */}
+            <div className="space-y-8">
+              {/* Amount */}
+              <div className="border-l-4 border-green-500 bg-gray-50 rounded-r-xl p-6">
+                <div className="flex items-start justify-between mb-4">
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900">💰 Incentive Amount</h3>
+                    <p className="text-sm text-gray-600 mt-1">The cash reward users receive</p>
+                  </div>
+                </div>
+                <div className="grid grid-cols-4 gap-3 mb-4">
+                  <div className="bg-white border-2 border-gray-200 rounded-lg p-4 text-center hover:border-green-500 transition-colors cursor-pointer">
+                    <div className="text-2xl font-bold text-gray-900">$100</div>
+                    <div className="text-xs text-gray-600 mt-1">Conservative</div>
+                  </div>
+                  <div className="bg-white border-2 border-gray-200 rounded-lg p-4 text-center hover:border-green-500 transition-colors cursor-pointer">
+                    <div className="text-2xl font-bold text-gray-900">$150</div>
+                    <div className="text-xs text-gray-600 mt-1">Moderate</div>
+                  </div>
+                  <div className="bg-white border-2 border-green-500 rounded-lg p-4 text-center">
+                    <div className="text-2xl font-bold text-green-600">$200</div>
+                    <div className="text-xs text-green-600 mt-1 font-semibold">Baseline</div>
+                  </div>
+                  <div className="bg-white border-2 border-gray-200 rounded-lg p-4 text-center hover:border-green-500 transition-colors cursor-pointer">
+                    <div className="text-2xl font-bold text-gray-900">$250</div>
+                    <div className="text-xs text-gray-600 mt-1">Aggressive</div>
+                  </div>
+                </div>
+                <p className="text-sm text-gray-700 bg-white rounded-lg p-4">
+                  <strong className="text-gray-900">Hypothesis:</strong> Higher amounts drive volume but reduce margin. Test to find elasticity curve—where does incremental cost stop delivering incremental activation?
+                </p>
+              </div>
+
+              {/* Threshold */}
+              <div className="border-l-4 border-blue-500 bg-gray-50 rounded-r-xl p-6">
+                <div className="flex items-start justify-between mb-4">
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900">🎯 Qualification Threshold</h3>
+                    <p className="text-sm text-gray-600 mt-1">Minimum direct deposit required</p>
+                  </div>
+                </div>
+                <div className="grid grid-cols-3 gap-3 mb-4">
+                  <div className="bg-white border-2 border-gray-200 rounded-lg p-4 text-center hover:border-blue-500 transition-colors cursor-pointer">
+                    <div className="text-2xl font-bold text-gray-900">$200</div>
+                    <div className="text-xs text-gray-600 mt-1">Low bar</div>
+                  </div>
+                  <div className="bg-white border-2 border-blue-500 rounded-lg p-4 text-center">
+                    <div className="text-2xl font-bold text-blue-600">$500</div>
+                    <div className="text-xs text-blue-600 mt-1 font-semibold">Baseline</div>
+                  </div>
+                  <div className="bg-white border-2 border-gray-200 rounded-lg p-4 text-center hover:border-blue-500 transition-colors cursor-pointer">
+                    <div className="text-2xl font-bold text-gray-900">$1,000</div>
+                    <div className="text-xs text-gray-600 mt-1">Quality filter</div>
+                  </div>
+                </div>
+                <p className="text-sm text-gray-700 bg-white rounded-lg p-4">
+                  <strong className="text-gray-900">Hypothesis:</strong> Higher thresholds filter for quality but reduce conversion. Find the sweet spot where we maximize valuable activations without excluding high-intent users.
+                </p>
+              </div>
+
+              {/* Timing */}
+              <div className="border-l-4 border-purple-500 bg-gray-50 rounded-r-xl p-6">
+                <div className="flex items-start justify-between mb-4">
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900">⏱️ Time Window</h3>
+                    <p className="text-sm text-gray-600 mt-1">Days to complete qualification</p>
+                  </div>
+                </div>
+                <div className="grid grid-cols-4 gap-3 mb-4">
+                  <div className="bg-white border-2 border-gray-200 rounded-lg p-4 text-center hover:border-purple-500 transition-colors cursor-pointer">
+                    <div className="text-2xl font-bold text-gray-900">15d</div>
+                    <div className="text-xs text-gray-600 mt-1">Urgent</div>
+                  </div>
+                  <div className="bg-white border-2 border-gray-200 rounded-lg p-4 text-center hover:border-purple-500 transition-colors cursor-pointer">
+                    <div className="text-2xl font-bold text-gray-900">30d</div>
+                    <div className="text-xs text-gray-600 mt-1">Standard</div>
+                  </div>
+                  <div className="bg-white border-2 border-purple-500 rounded-lg p-4 text-center">
+                    <div className="text-2xl font-bold text-purple-600">45d</div>
+                    <div className="text-xs text-purple-600 mt-1 font-semibold">Baseline</div>
+                  </div>
+                  <div className="bg-white border-2 border-gray-200 rounded-lg p-4 text-center hover:border-purple-500 transition-colors cursor-pointer">
+                    <div className="text-2xl font-bold text-gray-900">60d</div>
+                    <div className="text-xs text-gray-600 mt-1">Flexible</div>
+                  </div>
+                </div>
+                <p className="text-sm text-gray-700 bg-white rounded-lg p-4">
+                  <strong className="text-gray-900">Hypothesis:</strong> Longer windows improve completion but delay insights and may increase abuse. Test to balance activation rate with learning velocity.
+                </p>
+              </div>
+
+              {/* Payout Structure */}
+              <div className="border-l-4 border-orange-500 bg-gray-50 rounded-r-xl p-6">
+                <div className="flex items-start justify-between mb-4">
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900">💳 Payout Structure</h3>
+                    <p className="text-sm text-gray-600 mt-1">How and when reward is distributed</p>
+                  </div>
+                </div>
+                <div className="grid grid-cols-3 gap-3 mb-4">
+                  <div className="bg-white border-2 border-orange-500 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                    <div className="text-lg font-bold text-gray-900 mb-1">Full</div>
+                    <div className="text-2xl font-bold text-orange-600">$200</div>
+                    <div className="text-xs text-gray-600 mt-2">One-time after DD</div>
+                  </div>
+                  <div className="bg-white border-2 border-gray-200 rounded-lg p-4 hover:border-orange-500 hover:shadow-md transition-all cursor-pointer">
+                    <div className="text-lg font-bold text-gray-900 mb-1">Split</div>
+                    <div className="text-2xl font-bold text-gray-900">$50 + $150</div>
+                    <div className="text-xs text-gray-600 mt-2">Early + completion</div>
+                  </div>
+                  <div className="bg-white border-2 border-gray-200 rounded-lg p-4 hover:border-orange-500 hover:shadow-md transition-all cursor-pointer">
+                    <div className="text-lg font-bold text-gray-900 mb-1">Tiered</div>
+                    <div className="text-2xl font-bold text-gray-900">Up to $200</div>
+                    <div className="text-xs text-gray-600 mt-2">Based on behavior</div>
+                  </div>
+                </div>
+                <p className="text-sm text-gray-700 bg-white rounded-lg p-4">
+                  <strong className="text-gray-900">Hypothesis:</strong> Split payouts encourage early engagement and reduce churn risk. Tiered rewards can drive multiple valuable behaviors. Test impact on activation and 90-day retention.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       {/* Funnel & Lifecycle Design */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-12 text-center">
-          Funnel & Lifecycle Design
+        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+          The Conversion Journey
         </h2>
+        <p className="text-xl text-gray-600 mb-12">
+          Seven critical moments where incentive messaging, product UX, and lifecycle triggers drive behavior
+        </p>
 
         <div className="bg-white border-2 border-gray-200 rounded-2xl p-8 max-w-4xl mx-auto">
           <div className="space-y-6">
@@ -573,50 +861,268 @@ export default function CashIncentiveContent() {
         </div>
       </div>
 
-      {/* Experimentation Roadmap */}
+      {/* Real-World Scenario - Visual Break */}
+      <div className="bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 text-white border-y border-purple-800">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+          <div className="max-w-4xl mx-auto">
+            <div className="inline-flex items-center px-4 py-2 bg-purple-500/30 rounded-full text-sm font-bold mb-6">
+              <Activity className="h-4 w-4 mr-2" />
+              Real-World Scenario
+            </div>
+
+            <h2 className="text-3xl sm:text-4xl font-bold mb-6">What success looks like in practice</h2>
+
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 mb-8">
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <div className="text-sm font-bold text-purple-300 uppercase mb-3">Before Optimization</div>
+                  <div className="space-y-3 text-purple-100">
+                    <div className="flex items-start gap-3">
+                      <TrendingDown className="h-5 w-5 text-red-400 flex-shrink-0 mt-0.5" />
+                      <div className="text-sm">
+                        <strong className="text-white">Blanket $200 offer</strong> to all users
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <TrendingDown className="h-5 w-5 text-red-400 flex-shrink-0 mt-0.5" />
+                      <div className="text-sm">
+                        <strong className="text-white">45% activation rate</strong> (55% never completed DD)
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <TrendingDown className="h-5 w-5 text-red-400 flex-shrink-0 mt-0.5" />
+                      <div className="text-sm">
+                        <strong className="text-white">35% 90-day retention</strong> (65% churned)
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <TrendingDown className="h-5 w-5 text-red-400 flex-shrink-0 mt-0.5" />
+                      <div className="text-sm">
+                        <strong className="text-white">$320 CAC,</strong> $240 LTV → negative unit economics
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div className="text-sm font-bold text-green-300 uppercase mb-3">After Optimization</div>
+                  <div className="space-y-3 text-green-100">
+                    <div className="flex items-start gap-3">
+                      <TrendingUp className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
+                      <div className="text-sm">
+                        <strong className="text-white">Segmented offers</strong> ($100-250 by intent)
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <TrendingUp className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
+                      <div className="text-sm">
+                        <strong className="text-white">62% activation rate</strong> (+17pp lift)
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <TrendingUp className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
+                      <div className="text-sm">
+                        <strong className="text-white">58% 90-day retention</strong> (+23pp improvement)
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <TrendingUp className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
+                      <div className="text-sm">
+                        <strong className="text-white">$185 CAC,</strong> $420 LTV → 2.3x LTV/CAC
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid sm:grid-cols-3 gap-6">
+              <div className="bg-white/5 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
+                <div className="text-4xl font-bold text-green-400 mb-2">-42%</div>
+                <div className="text-sm text-purple-200">CAC reduction</div>
+              </div>
+              <div className="bg-white/5 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
+                <div className="text-4xl font-bold text-green-400 mb-2">+75%</div>
+                <div className="text-sm text-purple-200">LTV improvement</div>
+              </div>
+              <div className="bg-white/5 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
+                <div className="text-4xl font-bold text-green-400 mb-2">3.8x</div>
+                <div className="text-sm text-purple-200">ROI on optimization</div>
+              </div>
+            </div>
+
+            <div className="mt-8 p-6 bg-purple-500/20 backdrop-blur-sm border border-purple-400/30 rounded-xl">
+              <p className="text-purple-100 leading-relaxed text-sm">
+                <strong className="text-white">Key drivers:</strong> Segmented offers reduced wasted spend on high-intent users. Split payouts ($50 + $150) improved early engagement and reduced churn. Lifecycle nudges recovered 18% of drop-offs. Fraud detection blocked 4% of abusive signups before payout.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Experimentation Roadmap - Timeline Style */}
       <div className="bg-gray-100 border-y border-gray-200">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-12 text-center">
-            Experimentation Roadmap
-          </h2>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+              3-Phase Testing Roadmap
+            </h2>
+            <p className="text-xl text-gray-600 mb-12">
+              Move from baseline validation → segment optimization → predictive intelligence
+            </p>
 
-          <div className="space-y-8">
-            {experimentPhases.map((phase, idx) => (
-              <motion.div
-                key={phase.phase}
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: idx * 0.2 }}
-                className="bg-white border-2 border-gray-200 rounded-xl p-8"
-              >
-                <div className="flex items-start gap-4 mb-6">
-                  <div className="h-12 w-12 rounded-full bg-gradient-to-br from-blue-500 to-green-500 text-white font-bold flex items-center justify-center text-lg">
-                    {idx + 1}
+            {/* Timeline visualization */}
+            <div className="relative">
+              {/* Vertical line */}
+              <div className="absolute left-8 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-400 via-purple-400 to-green-400"></div>
+
+              <div className="space-y-12">
+                {/* Phase 1 */}
+                <div className="relative pl-20">
+                  <div className="absolute left-0 top-0 h-16 w-16 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 text-white font-bold flex items-center justify-center text-2xl shadow-lg border-4 border-white">
+                    1
                   </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">{phase.phase}</h3>
-                    <p className="text-gray-700">{phase.objective}</p>
+
+                  <div className="bg-white rounded-2xl shadow-sm border-2 border-blue-200 p-8">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="px-4 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-bold">Months 1-2</div>
+                      <div className="h-px flex-1 bg-gray-200"></div>
+                    </div>
+
+                    <h3 className="text-2xl font-bold text-gray-900 mb-3">Baseline Optimization</h3>
+                    <p className="text-gray-700 mb-6">
+                      <strong>Goal:</strong> Establish fundamental conversion economics and elasticity curves
+                    </p>
+
+                    <div className="grid sm:grid-cols-2 gap-4 mb-6">
+                      <div className="bg-blue-50 rounded-lg p-4">
+                        <div className="font-bold text-gray-900 mb-2 text-sm">Test: Incentive Amount</div>
+                        <div className="text-sm text-gray-700">$100 vs $150 vs $200 vs $250</div>
+                      </div>
+                      <div className="bg-blue-50 rounded-lg p-4">
+                        <div className="font-bold text-gray-900 mb-2 text-sm">Test: Qualification Threshold</div>
+                        <div className="text-sm text-gray-700">DD $200 vs $500 vs $1,000</div>
+                      </div>
+                      <div className="bg-blue-50 rounded-lg p-4">
+                        <div className="font-bold text-gray-900 mb-2 text-sm">Test: Messaging Angle</div>
+                        <div className="text-sm text-gray-700">Benefit vs urgency vs social proof</div>
+                      </div>
+                      <div className="bg-blue-50 rounded-lg p-4">
+                        <div className="font-bold text-gray-900 mb-2 text-sm">Test: Landing Page Format</div>
+                        <div className="text-sm text-gray-700">Long-form vs short-form</div>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start gap-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg p-4">
+                      <Lightbulb className="h-5 w-5 flex-shrink-0 mt-0.5" />
+                      <div className="text-sm">
+                        <strong>Expected Learning:</strong> Baseline elasticity curve, optimal offer structure, CAC benchmarks
+                      </div>
+                    </div>
                   </div>
                 </div>
 
-                <div className="mb-6">
-                  <h4 className="font-semibold text-gray-900 mb-3">Sample Tests:</h4>
-                  <ul className="space-y-2">
-                    {phase.tests.map((test) => (
-                      <li key={test} className="flex items-start gap-2 text-gray-700">
-                        <CheckCircle2 className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
-                        <span>{test}</span>
-                      </li>
-                    ))}
-                  </ul>
+                {/* Phase 2 */}
+                <div className="relative pl-20">
+                  <div className="absolute left-0 top-0 h-16 w-16 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 text-white font-bold flex items-center justify-center text-2xl shadow-lg border-4 border-white">
+                    2
+                  </div>
+
+                  <div className="bg-white rounded-2xl shadow-sm border-2 border-purple-200 p-8">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="px-4 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-bold">Months 3-5</div>
+                      <div className="h-px flex-1 bg-gray-200"></div>
+                    </div>
+
+                    <h3 className="text-2xl font-bold text-gray-900 mb-3">Segment-Based Personalization</h3>
+                    <p className="text-gray-700 mb-6">
+                      <strong>Goal:</strong> Tailor offers and messaging by user segment and channel
+                    </p>
+
+                    <div className="grid sm:grid-cols-2 gap-4 mb-6">
+                      <div className="bg-purple-50 rounded-lg p-4">
+                        <div className="font-bold text-gray-900 mb-2 text-sm">Test: Channel-Specific Offers</div>
+                        <div className="text-sm text-gray-700">Meta vs TikTok vs Paid Search</div>
+                      </div>
+                      <div className="bg-purple-50 rounded-lg p-4">
+                        <div className="font-bold text-gray-900 mb-2 text-sm">Test: Intent-Based Allocation</div>
+                        <div className="text-sm text-gray-700">High-intent vs passive prospects</div>
+                      </div>
+                      <div className="bg-purple-50 rounded-lg p-4">
+                        <div className="font-bold text-gray-900 mb-2 text-sm">Test: Activation Sequences</div>
+                        <div className="text-sm text-gray-700">Personalized email/SMS by segment</div>
+                      </div>
+                      <div className="bg-purple-50 rounded-lg p-4">
+                        <div className="font-bold text-gray-900 mb-2 text-sm">Test: Creative Matching</div>
+                        <div className="text-sm text-gray-700">Segment-specific value props</div>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start gap-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-lg p-4">
+                      <Lightbulb className="h-5 w-5 flex-shrink-0 mt-0.5" />
+                      <div className="text-sm">
+                        <strong>Expected Learning:</strong> Which segments respond to which levers, optimal offer by channel, personalization lift
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
-                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-                  <span className="font-semibold text-gray-900">Expected Learning:</span>
-                  <span className="text-gray-700 ml-2">{phase.expectedLearning}</span>
+                {/* Phase 3 */}
+                <div className="relative pl-20">
+                  <div className="absolute left-0 top-0 h-16 w-16 rounded-full bg-gradient-to-br from-green-500 to-green-600 text-white font-bold flex items-center justify-center text-2xl shadow-lg border-4 border-white">
+                    3
+                  </div>
+
+                  <div className="bg-white rounded-2xl shadow-sm border-2 border-green-200 p-8">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="px-4 py-1 bg-green-100 text-green-700 rounded-full text-sm font-bold">Months 6+</div>
+                      <div className="h-px flex-1 bg-gray-200"></div>
+                    </div>
+
+                    <h3 className="text-2xl font-bold text-gray-900 mb-3">Advanced Optimization</h3>
+                    <p className="text-gray-700 mb-6">
+                      <strong>Goal:</strong> Scale with predictive models and dynamic systems
+                    </p>
+
+                    <div className="grid sm:grid-cols-2 gap-4 mb-6">
+                      <div className="bg-green-50 rounded-lg p-4">
+                        <div className="font-bold text-gray-900 mb-2 text-sm">Test: ML-Powered Allocation</div>
+                        <div className="text-sm text-gray-700">Incentive by predicted LTV</div>
+                      </div>
+                      <div className="bg-green-50 rounded-lg p-4">
+                        <div className="font-bold text-gray-900 mb-2 text-sm">Test: Dynamic Offers</div>
+                        <div className="text-sm text-gray-700">Multi-armed bandit optimization</div>
+                      </div>
+                      <div className="bg-green-50 rounded-lg p-4">
+                        <div className="font-bold text-gray-900 mb-2 text-sm">Test: AI Lifecycle Triggers</div>
+                        <div className="text-sm text-gray-700">Predictive nudge timing</div>
+                      </div>
+                      <div className="bg-green-50 rounded-lg p-4">
+                        <div className="font-bold text-gray-900 mb-2 text-sm">Test: Cross-Sell Timing</div>
+                        <div className="text-sm text-gray-700">Post-activation upsell optimization</div>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start gap-3 bg-gradient-to-r from-green-600 to-teal-600 text-white rounded-lg p-4">
+                      <Lightbulb className="h-5 w-5 flex-shrink-0 mt-0.5" />
+                      <div className="text-sm">
+                        <strong>Expected Learning:</strong> Maximize efficiency through intelligent automation, optimal budget allocation, real-time optimization
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </motion.div>
-            ))}
+              </div>
+            </div>
+
+            {/* Summary callout */}
+            <div className="mt-12 bg-white border-2 border-gray-300 rounded-xl p-6">
+              <div className="flex items-start gap-4">
+                <BarChart3 className="h-6 w-6 text-gray-600 flex-shrink-0 mt-1" />
+                <div className="text-sm text-gray-700 leading-relaxed">
+                  <strong className="text-gray-900">Sequential learning approach:</strong> Each phase builds on insights from the previous. Phase 1 establishes baseline metrics. Phase 2 adds segmentation to improve efficiency. Phase 3 layers in predictive intelligence for scale.
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -735,38 +1241,64 @@ export default function CashIncentiveContent() {
         </div>
       </div>
 
-      {/* Key Takeaways */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-12 text-center">Key Takeaways</h2>
+      {/* Key Takeaways - Grid Format */}
+      <div className="bg-gradient-to-b from-white to-gray-100">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">What makes this work</h2>
+            <p className="text-xl text-gray-600 mb-12">Four principles that separate strategic growth from campaign tactics</p>
 
-        <div className="bg-gradient-to-br from-blue-50 to-green-50 border-2 border-blue-200 rounded-2xl p-8 max-w-4xl mx-auto">
-          <div className="space-y-6">
-            <div className="flex items-start gap-4">
-              <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-1" />
-              <p className="text-gray-800 leading-relaxed">
-                <strong>Incentives should be tied to high-value behavior,</strong> not just signups. Reward actions
-                that predict retention and lifetime value.
-              </p>
+            <div className="grid md:grid-cols-2 gap-6 mb-12">
+              <div className="bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-blue-400 transition-colors">
+                <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mb-4">
+                  <Target className="h-6 w-6 text-blue-600" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Behavior over volume</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Signups are vanity metrics. Direct deposit setup and recurring usage are what matter. Tie incentives to actions that predict LTV, not attention.
+                </p>
+              </div>
+
+              <div className="bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-green-400 transition-colors">
+                <div className="h-12 w-12 rounded-full bg-green-100 flex items-center justify-center mb-4">
+                  <BarChart3 className="h-6 w-6 text-green-600" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Economics discipline</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Acquisition without activation destroys unit economics. Monitor LTV/CAC relentlessly. Set guardrails. Know when to pause spending.
+                </p>
+              </div>
+
+              <div className="bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-purple-400 transition-colors">
+                <div className="h-12 w-12 rounded-full bg-purple-100 flex items-center justify-center mb-4">
+                  <Users className="h-6 w-6 text-purple-600" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Segmentation wins</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Blanket offers waste money. High-intent users need less. Passive prospects need more. Optimize spend by predicted value, not averages.
+                </p>
+              </div>
+
+              <div className="bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-orange-400 transition-colors">
+                <div className="h-12 w-12 rounded-full bg-orange-100 flex items-center justify-center mb-4">
+                  <Zap className="h-6 w-6 text-orange-600" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Test everything</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Don't guess. Test amount, threshold, timing, payout structure. Build elasticity curves. Learn what works, double down on winners.
+                </p>
+              </div>
             </div>
-            <div className="flex items-start gap-4">
-              <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-1" />
-              <p className="text-gray-800 leading-relaxed">
-                <strong>Acquisition alone is not enough.</strong> Success depends on activation quality, retention, and
-                efficient unit economics.
+
+            {/* Final thought */}
+            <div className="bg-gradient-to-r from-gray-900 via-blue-900 to-purple-900 rounded-2xl p-10 text-center text-white">
+              <Quote className="h-10 w-10 text-blue-300 mx-auto mb-6" />
+              <p className="text-2xl font-bold mb-4 leading-relaxed">
+                "Growth strategy isn't about finding clever hacks. It's about understanding behavior, respecting economics, and designing systems that scale."
               </p>
-            </div>
-            <div className="flex items-start gap-4">
-              <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-1" />
-              <p className="text-gray-800 leading-relaxed">
-                <strong>Experimentation is critical to finding optimal configuration.</strong> Test systematically
-                across incentive amount, qualification threshold, timing, and segmentation.
-              </p>
-            </div>
-            <div className="flex items-start gap-4">
-              <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-1" />
-              <p className="text-gray-800 leading-relaxed">
-                <strong>Great growth strategy balances persuasion, economics, and user psychology.</strong> Understand
-                what motivates behavior change and design incentives accordingly.
+              <div className="h-px bg-white/20 max-w-xs mx-auto my-6"></div>
+              <p className="text-blue-200 text-sm">
+                This is how you turn incentives into a sustainable acquisition engine—not just a one-time campaign.
               </p>
             </div>
           </div>
